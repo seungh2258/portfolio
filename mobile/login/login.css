@@ -1,0 +1,114 @@
+body {
+  background-color: #f8f8f8;
+  font-size: 1rem;
+}
+
+#content {
+  width: 100%;
+  margin: 50px auto 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  text-align: center; /* 전체 가운데 정렬 */
+}
+
+#content h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 100px auto 15px;
+}
+
+#content p {
+  color: #999;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#content form {
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 입력칸 가운데 정렬 */
+}
+
+#content form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left; /* 입력창 위 label은 왼쪽 정렬 */
+  width: 300px; /* input 너비와 동일하게 맞춤 */
+}
+
+#content form input {
+  border: 1px solid #ddd;
+  width: 300px; /* 고정 너비 */
+  height: 50px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+#content form input::placeholder {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #ddd;
+}
+
+#content form input[type=submit] {
+  margin-top: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  border: 0;
+  background: var(--font-color-main);
+  color: #fff;
+  font-weight: 400;
+  height: 60px;
+  cursor: pointer;
+}
+
+#content form input:focus {
+  outline-color: var(--font-color-main);
+}
+
+/* 아이디/비밀번호 찾기 */
+#content div:nth-of-type(1) {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#content div:nth-of-type(1) a {
+  font-weight: 400;
+  color: #999;
+  display: inline-block;
+}
+
+#content div:nth-of-type(1) a:last-child {
+  margin-left: 10px;
+  position: relative;
+}
+
+#content div:nth-of-type(1) a:last-child::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  background: #999;
+  left: -8px;
+  top: 7px;
+}
+
+/* 회원가입 안내 */
+#content div:nth-of-type(2) {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+#content div:nth-of-type(2) span {
+  color: #666;
+}
+
+#content div:nth-of-type(2) a {
+  display: inline;
+  color: var(--font-color-main);
+}

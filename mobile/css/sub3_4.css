@@ -1,0 +1,56 @@
+/* sub3_4 콘텐츠 */
+
+/* 서브 메뉴 영역 */
+.visual .sub_nav ul li{width: 33.33%;}
+
+
+
+/* 브랜드 로고 */
+#content .content_area .brand_logo_box{width: 100%;}
+#content .content_area .brand_logo_box img{display: block; width: 70%; height: 140px; object-fit: contain; object-position: center;
+margin: 0 auto;}
+#content .content_area .brand_logo_box p{text-align: center; font-size: 1.2rem; margin-top: 50px; padding: 0 30px;}
+
+#content .content_area hr{height: 1px; background: #ccc; border: 0; margin: 60px auto; width: 85%;}
+#content .content_area h3{font-size: 1.5rem; color: var(--font-color-main); text-align: center; font-weight: 700;}
+
+
+/* Brand Story */
+
+#content .content_area .brand_story_box>strong{font-size: 1.6rem; text-align: center; display: block;
+margin: 6px 0 20px; padding: 0 30px;}
+#content .content_area .brand_story_box>p{text-align: center; padding: 0 30px; font-size: 1.1rem;
+margin-bottom: 50px;}
+
+#content .content_area .brand_story_box>img{width: 100%; height: 300px; object-fit: cover; object-position: center;}
+
+
+#content .content_area .brand_story{background: url(../images/sub3_4/brand_story_bg.svg) no-repeat;
+    background-size: cover; color: #fff;
+padding: 50px 0;}
+#content .content_area .brand_story span{color: var(--font-color-main);}
+#content .content_area .brand_story strong,
+#content .content_area .brand_story p{padding: 0 30px; text-align: center; display: block;}
+#content .content_area .brand_story strong{font-size: 1.8rem;}
+#content .content_area .brand_story p{margin-top: 30px;}
+
+#content .content_area .brand_story_box .old_product_box{position: relative; margin-bottom: 150px;}
+#content .content_area .brand_story_box .old_product_box img{width: 35%; display: block; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .2);
+position: relative; margin: 70px 0;}
+#content .content_area .brand_story_box .old_product_box img:nth-of-type(1){top: 0; left: 50%;
+    transform: translateX(-80%) rotate(-10deg);}
+#content .content_area .brand_story_box .old_product_box img:nth-of-type(2){top: 30px; left: 50%;
+    transform: translateX(-10%) rotate(10deg); position: absolute;}
+
+
+#content .content_area .brand_story_box .illust{width: 30%; display: block; margin: 40px auto 100px;}
+
+#content .content_area .brand_story_box .product_box{}
+#content .content_area .brand_story_box .product_box img{width: 60%; display: block; margin: 30px auto 50px;}
+#content .content_area .brand_story_box .product_box ul{width: 90%; margin: 0 auto 120px;}
+#content .content_area .brand_story_box .product_box ul li{text-align: center; background: #7a3629;
+padding: 10px; width: 78%; margin: 0 auto; font-size: 1.3rem; font-weight: 500; border-radius: 15px;
+margin-bottom: 15px; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .2);}
+
+#content .content_area .brand_story_box .brand_story>img:nth-last-child(1){width: 70%; display: block; margin: 60px auto 80px;
+transform: translateX(3%);}

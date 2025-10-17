@@ -1,0 +1,190 @@
+/* 기본 스타일 */
+body {
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin: 50px auto 0;
+    display: block;
+    width: 192px;
+    height: 48px;
+    background: url(../../common/images/logo_top.png) no-repeat center center;
+    background-size: contain;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+#content {
+    width: 90%;
+    max-width: 750px;
+    margin: 100px auto;
+    padding: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+/* 멤버 탭 */
+.member_tab {
+    padding: 30px 0;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member_tab a {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 10px;
+    color: #aaa;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.member_tab a.on {
+    color: #fff;
+    border-bottom: 2px solid #333;
+    font-weight: bold;
+}
+
+.member_tab span {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* 회원가입 폼 */
+.join {
+    text-align: left;
+    position: relative;
+}
+
+.join h4 {
+    font-size: 1.2em;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.join h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+.join .policy {
+    padding: 10px;
+    overflow-y: scroll;
+    height: 150px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.5em;
+    box-sizing: border-box;
+}
+
+.join .check {
+    color: #333;
+    margin: 20px 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.join .button {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.join .button .ok,
+.join .button button,
+.join .allcheck {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    line-height: 2.5rem;
+    height: 50px;
+    padding: 8px 0;
+    border: none;
+    background: var(--font-color-main);
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.join .button .cancel {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    line-height: 24px;
+    padding: 8px 0;
+    border: none;
+    background: #999;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.join .allcheck {
+    background: transparent;
+    border: 1px solid var(--font-color-main);
+    color: var(--font-color-main);
+}
+
+/* 체크박스 UI 변경 */
+input[type=checkbox] + label::before {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 1px solid #999;
+    content: '';
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label {
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + label::before {
+    background: #fff url(../images/checked_bg.png) center center no-repeat;
+    border: 1px solid #e3e9fe;
+    background-size: cover;
+}
+
+/* 푸터 */
+#footerArea .family {
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 768px) {
+    .join h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+}

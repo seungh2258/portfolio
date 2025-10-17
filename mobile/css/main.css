@@ -1,0 +1,221 @@
+/* index css */
+
+/* 비주얼 영역 */
+.visual{}
+.visual .swiper1{width: 100%; height: auto;}
+/* 스와이퍼의 높이값이 유동이면 auto, 값을 고정이면 px값을 주어야한다. */
+
+.visual .swiper1 .swiper-slide{text-align: center;}
+.visual .swiper1 .swiper-slide img{width: 100%;}
+.visual .swiper1 .swiper-slide p{position: absolute; font-size: 2.5rem; color: #fff; left: 0; top: 45%; width: 100%; text-align: center;}
+
+/* 스와이퍼 공통 */
+.swiper-button-next, .swiper-button-prev{color: rgba(235, 99, 23, .6);}
+.swiper-pagination-bullet{background: #fff; opacity: .7;}
+.swiper-pagination-bullet-active{background: #eb6317; opacity: 1;}
+
+
+
+
+
+/* 회사소개 */
+#content .introduction .intro_title{text-align: center; font-size: 1.9rem; font-weight: 700; margin-top: 70px;}
+#content .introduction .intro_title span{color: var(--font-color-main);}
+
+#content .introduction .intro_img_box_1 {
+ margin: 30px auto 0;
+ position: relative;
+ width: 300px;   /* 배경 이미지 크기 */
+ height: 300px;
+}
+
+/* 흔들리는 이미지 sway1 */
+#content .introduction .intro_img_box_1 img.sway1 {
+ position: absolute;
+ top: 50%; left: 50%;
+ transform: translate(-50%, -50%) translate(-70px, -40px) scale(.7);
+ z-index: 50;
+ animation: sway1 3s infinite ease-in-out;
+ transform-origin: center center;
+}
+
+/* 배경 원형 이미지 */
+#content .introduction .intro_img_box_1 img:nth-of-type(2) {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; height: 300px;
+  z-index: 40;
+}
+
+/* 회사소개 intro_img_box_2 */
+#content .introduction .intro_img_box_2 {
+    margin: 40px auto 0;
+    position: relative;
+    width: 300px;   /* 배경 이미지 크기에 맞춤 */
+    height: 300px;
+}
+
+/* sway2 이미지 */
+#content .introduction .intro_img_box_2 img.sway2 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) translate(80px, 50px) scale(.8);
+  z-index: 50;
+  animation: sway2 3s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+/* sway3 이미지 */
+#content .introduction .intro_img_box_2 img.sway3 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) translate(75px, -20px) scale(.8);
+  z-index: 50;
+  animation: sway3 4s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+/* 가운데 배경 이미지 */
+#content .introduction .intro_img_box_2 img:nth-of-type(3) {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(.7);
+  z-index: 40;
+}
+
+/* 개별 애니메이션 키프레임 */
+@keyframes sway1 {
+ 0%   { transform: translate(-50%, -50%) translate(80px, 50px) rotate(-2deg) scale(.7); }
+ 50%  { transform: translate(-50%, -50%) translate(80px, 50px) rotate(2deg) scale(.7); }
+ 100% { transform: translate(-50%, -50%) translate(80px, 50px) rotate(-2deg) scale(.7); }
+}
+
+@keyframes sway2 {
+ 0%   { transform: translate(-50%, -50%) translate(-100px, -40px) rotate(-5deg) scale(.8); }
+ 50%  { transform: translate(-50%, -50%) translate(-100px, -40px) rotate(3deg) scale(.8); }
+ 100% { transform: translate(-50%, -50%) translate(-100px, -40px) rotate(-5deg) scale(.8); }
+}
+
+@keyframes sway3 {
+ 0%   { transform: translate(-50%, -50%) translate(75px, -20px) rotate(-3deg) scale(.8); }
+ 50%  { transform: translate(-50%, -50%) translate(75px, -20px) rotate(3deg) scale(.8); }
+ 100% { transform: translate(-50%, -50%) translate(75px, -20px) rotate(-3deg) scale(.8); }
+}
+
+
+
+
+#content .introduction strong{display: block; font-size: 1.7rem; text-align: center; margin-top: 20px;}
+#content .introduction>p{text-align: center; font-size: 1.2rem; margin-top: 10px; padding: 0 20px;}
+#content .introduction>p span{color: var(--font-color-main); font-weight: 500;}
+
+#content .introduction>a:nth-last-child(1){background: var(--font-color-main); color: #fff; font-size: 1.3rem; text-align: center; width: 130px; padding: 10px 0;
+margin: 30px auto 50px; border-radius: 15px; font-weight: 500; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .2);}
+
+
+/* 브랜드 */
+#content .brand{background: linear-gradient(180deg,rgba(235, 99, 23, 1) 0%, rgba(251, 123, 52, 1) 100%); color: #fff; padding: 45px 0 80px;}
+#content .brand h3{text-align: center; font-size: 1.9rem; font-weight: 700; text-shadow: 2px 2px 10px rgba(0, 0, 0, .2);}
+#content .brand .brand_paragraph{text-align: center; font-size: 1.2rem; margin-top: 10px; text-shadow: 2px 2px 10px rgba(0, 0, 0, .2);}
+
+#content .brand .swiper2 {
+      width: 100%;       /* 부모 기준 비율로 */
+  max-width: none; /* 최대 크기 제한 */
+  margin: 30px 0 0 0;   /* 가운데 정렬 */
+  overflow: visible;
+    }
+#content .brand .swiper2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, .2);
+    aspect-ratio: 1 / 1; /* 정사각형 유지 */
+    background-size: cover;
+    background-position: center;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+#content .brand .swiper2 .swiper-slide:nth-of-type(1){background: url(../images/main/brand_1_x2.png) no-repeat; background-size: contain;}
+#content .brand .swiper2 .swiper-slide:nth-of-type(2){background: url(../images/main/brand_2_x2.png) no-repeat; background-size: contain;}
+#content .brand .swiper2 .swiper-slide:nth-of-type(3){background: url(../images/main/brand_3_x2.png) no-repeat; background-size: contain;}
+#content .brand .swiper2 .swiper-slide:nth-of-type(4){background: url(../images/main/brand_4_x2.png) no-repeat; background-size: contain;}
+
+#content .brand .swiper2 ul li a{width: 100%; height: 100%; display: flex; flex-direction: column; gap: 30px;
+align-items: center; justify-content: flex-end;}
+#content .brand .swiper2 ul li a span{color: #fff; background: var(--font-color-main); width: 130px; padding: 10px 0;
+border-radius: 10px; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .2); margin-bottom: 30px; font-weight: 500;}
+
+#content .brand .swiper2 .swiper-pagination{transform: translateY(40px);}
+#content .brand .swiper2 .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.3); /* 기본 bullet 색상 - 반투명 흰색 */
+    opacity: 1;
+}
+#content .brand .swiper2 .swiper-pagination-bullet-active {
+    background: #fff; /* 활성 bullet 색상 - 순백색 */
+    opacity: 1;
+}
+
+/* 지속경영 */
+#content .esg h3{text-align: center; font-size: 1.9rem; font-weight: 700; color: #fff;}
+#content .esg .esg_paragraph{text-align: center; font-size: 1.2rem; margin-top: 10px; color: #fff;}
+#content .esg .esg_paragraph span{color: var(--font-color-main); font-weight: 500;}
+#content .esg{background: url(../images/main/esg_bg.png) no-repeat; background-size: cover; padding: 45px 0;}
+
+#content .esg ul{width: 100%; margin: 50px auto 0; display: flex; flex-direction: column; gap: 20px;}
+#content .esg ul li{width: 90%; height: 200px; margin: 0 auto; border-radius: 20px;}
+
+#content .esg ul li a{display: block; width: 100%; height: 100%; position: relative;}
+#content .esg ul li a p{color: #fff; position: absolute; font-size: 2rem; font-weight: 600;
+bottom: 7%; left: 4%;}
+#content .esg ul li a p span{font-size: 1.5rem; font-weight: 400;}
+#content .esg ul li a .material-symbols-outlined{color: rgba(255, 255, 255, .6); position: absolute; bottom: 7%; right: 5%;
+animation: sway-icon 2s infinite ease-in-out; transform-origin: bottom center;}
+
+@keyframes sway-icon {
+  0%   { transform: rotate(00deg); }
+  25%  { transform: rotate(10deg); }
+  50%  { transform: rotate(-10deg); }
+  70%  { transform: rotate(0deg); }   /* 제자리로 돌아옴 */
+  100% { transform: rotate(0deg); }   /* 멈춘 상태 유지 */
+}
+
+.swiper3 {width: 90%; height: 200px;}
+.swiper3 .swiper-slide {background-position: center; background-size: cover; width: 90%; height: 200px; border-radius: 20px;}
+#content .esg ul li:nth-of-type(1) .swiper3 .swiper-slide:nth-of-type(1){background: url(../images/main/esg_3_x2.png) center no-repeat; background-size: cover;}
+#content .esg ul li:nth-of-type(1) .swiper3 .swiper-slide:nth-of-type(2){background: url(../images/main/esg_3_back_x2.png) center no-repeat; background-size: cover;
+color: #fff; display: flex; justify-content: center; align-items: center; text-align: center; line-height: 2rem;}
+#content .esg ul li:nth-of-type(2) .swiper3 .swiper-slide:nth-of-type(1){background: url(../images/main/esg_1_x2.png) center no-repeat; background-size: cover;}
+#content .esg ul li:nth-of-type(2) .swiper3 .swiper-slide:nth-of-type(2){background: url(../images/main/esg_1_back_x2.png) center no-repeat; background-size: cover;
+color: #fff; display: flex; justify-content: center; align-items: center; text-align: center; line-height: 2rem;}
+#content .esg ul li:nth-of-type(3) .swiper3 .swiper-slide:nth-of-type(1){background: url(../images/main/esg_2_x2.png) center bottom no-repeat; background-size: cover;}
+#content .esg ul li:nth-of-type(3) .swiper3 .swiper-slide:nth-of-type(2){background: url(../images/main/esg_2_back_x2.png) center no-repeat; background-size: cover;
+color: #fff; display: flex; justify-content: center; align-items: center; text-align: center; line-height: 2rem;}
+
+#content .esg ul li:nth-of-type(1) .swiper3 .swiper-slide:nth-of-type(2) p span,
+#content .esg ul li:nth-of-type(2) .swiper3 .swiper-slide:nth-of-type(2) p span,
+#content .esg ul li:nth-of-type(3) .swiper3 .swiper-slide:nth-of-type(2) p span{color: var(--font-color-main); font-weight: 600;}
+
+
+/* 고객지원 */
+#content .support{padding: 40px 0 50px;}
+#content .support h3{text-align: center; font-size: 1.9rem; font-weight: 700;}
+#content .support ul{width: 100%; display: flex; flex-direction: column; gap: 20px; margin-top: 40px;}
+#content .support ul li{width: 85%; height: 100px; margin: 0 auto; border-radius: 20px; background: linear-gradient(148deg,rgba(255, 146, 84, 1) 0%, rgba(235, 99, 23, 1) 100%);
+display: flex;}
+#content .support ul li a{display: flex;  align-items: center; gap: 20px; margin-left: 30px; width: 100%; height: 100%;}
+#content .support ul li a>span{font-size: 50px; color: #fff; font-weight: 500;}
+#content .support ul li a p{color: #fff; font-size: 1.7rem; line-height: 2rem; font-weight: 500;}
+#content .support ul li a p span{font-size: 1.1rem; font-weight: 400;}

@@ -1,0 +1,26 @@
+/* sub1_4 콘텐츠 */
+
+
+#content .content_area .select{position: relative; z-index: 10;}
+#content .content_area .select .select_btn{width:85%; text-align: center; box-sizing: border-box; padding: 15px; background: var(--font-color-main); color: #fff;
+    position: relative; margin: 0 auto; border-radius:15px; z-index: 5;}
+#content .content_area .select .select_btn strong{font-size: 1.3rem; font-weight: 400;}
+#content .content_area .select .select_btn span{position: absolute; right: 20px; top: 15px; font-size: 30px;}
+#content .content_area .select ul{position: absolute; top:0; left:50%; width:85%; display: none; z-index: 4; transform: translate(-50%, 0); box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2); border-radius: 15px;}
+#content .content_area .select ul li{background: #fff; border: 1px solid #ccc; border-top: 0px;}
+#content .content_area .select ul li:nth-of-type(2){border-radius: 15px 15px 0 0;}
+#content .content_area .select ul li:nth-last-of-type(1){border-radius: 0 0 15px 15px;}
+#content .content_area .select ul li a{text-align: center; padding: 15px;  color: #333333; font-size: 1.3rem; font-weight: 400;}
+
+#content .content_area .tabs .tabs_inner{width:100%; margin-bottom: 10px; font-size: 50px; display: block; margin-top: 50px;}
+#content .content_area .tabs .tabs_inner h3{text-align: center; font-size: 2rem; font-weight: 600;}
+#content .content_area .tabs .tabs_inner .maps{width: 85%; margin: 30px auto; height: 300px; border: 2px solid var(--font-color-main);
+        border-radius: 20px; box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);}
+#content .content_area .tabs .tabs_inner .map_bottom{width: 400px; font-size: 1.3rem; padding: 0 30px; color: var(--font-color1);
+margin: 0 auto;}
+#content .content_area .tabs .tabs_inner .map_bottom span{transform: translateY(5px); color: var(--font-color-point2)}
+#content .content_area .tabs .tabs_inner .map_bottom p span{transform: translateY(3px); font-size: 1.8rem; color: var(--font-color-point2)}
+#content .content_area .tabs .tabs_inner .map_bottom p:nth-of-type(1){font-size: 1.8rem; font-weight: 500; margin: 40px 0 10px;}
+
+#content .content_area .tabs .tabs_inner .map_btn{display: flex; justify-content: center; align-items: center; gap: 20px; padding: 0 30px; margin: 40px 0;}
+#content .content_area .tabs .tabs_inner .map_btn a img{display: block; width: 180px; border-radius: 15px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);}

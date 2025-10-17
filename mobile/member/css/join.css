@@ -1,0 +1,234 @@
+body {
+  background-color: #eee;
+  font-size: 16px;
+}
+
+h1 a {
+  margin: 50px auto 0;
+  display: block;
+  width: 192px;
+  height: 48px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../../common/images/logo_top.png) center no-repeat;
+}
+
+#content {
+  max-width: 750px; /* 고정폭 대신 최대폭으로 수정 */
+  margin: 50px auto 0;
+  padding: 70px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  text-align: center; /* 전체 가운데 정렬 */
+}
+
+#content > span {
+  font-size: 1.7em;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+}
+
+#content > p {
+  color: #999;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+#content > p::before {
+  content: '*';
+  color: red;
+  margin-right: 5px;
+}
+
+/* form 스타일 */
+#content form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 폼 항목 가운데 정렬 */
+}
+
+#content form ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+#content form li {
+  margin: 30px 0;
+  text-align: left; /* label과 input은 왼쪽 정렬 */
+  width: 100%;
+  max-width: 500px;
+}
+
+#content form li label {
+  display: block;
+  font-weight: 500;
+}
+
+#content form li label::after {
+  content: '*';
+  color: red;
+}
+
+#content form li span {
+  color: red;
+}
+
+#content form li input {
+  border: 1px solid #eee;
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+#content form li input#hp2,
+#content form li input#hp3 {
+  width: 31.4%;
+  display: inline-block;
+}
+
+#content form li #hp1 {
+  width: 31.5%;
+  height: 54px;
+  padding-left: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+#content form li input::placeholder {
+  color: #ddd;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: .9em;
+}
+
+#content form li input#mail1,
+#content form li input#mail2 {
+  width: 47.5%;
+  display: inline-block;
+}
+
+#content form li input:focus {
+  outline-color: var(--font-color-main);
+}
+
+#content form li:last-child {
+  margin-bottom: 70px;
+}
+
+/* 버튼 */
+#content .form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#content input[type=submit] {
+  border: 0;
+  background: var(--font-color-main);
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 40%;
+  padding: 10px 0;
+  border-radius: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#content input[type=reset] {
+  border: 1px solid var(--font-color-main);
+  color: var(--font-color-main);
+  background: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 40%;
+  padding: 10px 0;
+  border-radius: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* 휴대폰 필드 */
+#content form li.phone-field {
+  margin: 30px 0;
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* "휴대폰" 라벨은 위에 표시 */
+#content form li.phone-field .field-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* 입력칸들은 가로로 나란히 */
+#content form li.phone-field .phone-inputs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#content form li.phone-field select,
+#content form li.phone-field input {
+  flex: 1;
+  min-width: 80px;
+  height: 50px;
+}
+
+#content form li.phone-field span {
+  margin: 0 3px;
+}
+
+
+/* 이메일 필드 */
+#content form li.email-field {
+  margin: 30px 0;
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* "이메일" 텍스트 라벨 */
+#content form li.email-field .field-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* 이메일 입력칸 가로 한 줄 */
+#content form li.email-field .email-inputs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#content form li.email-field input {
+  flex: 1;
+  height: 50px;
+}
+
+#content form li.email-field span {
+  margin: 0 5px;
+}
+
+/* 휴대폰 번호 사이 구분자 - */
+#content form li.phone-field span {
+  color: #000; /* 검정색 */
+  margin: 0 3px;
+}
+
+/* 이메일 아이디/도메인 사이 구분자 @ */
+#content form li.email-field span {
+  color: #000; /* 검정색 */
+  margin: 0 5px;
+}

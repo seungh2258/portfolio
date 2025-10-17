@@ -1,0 +1,68 @@
+/* 기념이념 내용 콘텐츠 */
+#content .content_area{margin: 0 auto;}
+
+#content .content_area h3{font-size: 2rem; font-weight: 600; color: var(--font-color-main); text-align: center;
+margin: 100px 0 35px;}
+#content .content_area strong{display: block; font-weight: 600; font-size: 2.5rem; text-align: center;
+margin-bottom: 20px;}
+#content .content_area p{font-size: 1.3rem; display: block; width: 1400px; margin: 0 auto; text-align: center; line-height: 2.4rem;}
+#content .content_area .brand_logo{display: block; margin: 0 auto 60px;}
+#content .content_area .brand_paragraph{font-size: 1.5rem;}
+
+#content .content_area p:nth-of-type(2){margin-bottom: 100px;}
+
+#content .content_area hr{height: 1px; background: #ccc; border: 0; margin: 100px auto 0; width: 1400px;}
+#content .content_area div:nth-of-type(1){width: 100%; height: 600px; background: url(../images/content2/brand_img_1.jpg);}
+
+#content .content_area .brand_story_box{background: url(../images/content2/brand_story_box_bg.png); padding: 100px 0;}
+#content .content_area .brand_story_box strong,
+#content .content_area .brand_story_box p{color: #fff;}
+#content .content_area .brand_story_box span{display: block; color: yellow; text-align: center; font-size: 1.4rem; font-weight: 560;
+margin-top: 20px;}
+
+#content .content_area .brand_story_box img:nth-of-type(1){display: block; margin: 100px auto 0;}
+#content .content_area .brand_story_box img:nth-of-type(2){display: block; margin: 0 auto 200px;}
+#content .content_area .brand_story_box strong:nth-of-type(2){font-size: 9rem; line-height: 8rem;}
+#content .content_area .brand_story_box p:nth-of-type(2){display: block; margin-top: 50px;}
+#content .content_area .brand_story_box p:nth-of-type(3){display: block; font-size: 2rem; line-height: 4rem; position: relative;
+margin-bottom: 80px;}
+
+#content .content_area .brand_story_box p:nth-of-type(3)::before,
+#content .content_area .brand_story_box p:nth-of-type(3)::after{content: ""; display: block; width: 70px; height: 70px;
+position: absolute;}
+#content .content_area .brand_story_box p:nth-of-type(3)::before{background: url(../images/content2/quotes_top.svg) no-repeat;
+top: -50px; left: 100px;}
+#content .content_area .brand_story_box p:nth-of-type(3)::after{background: url(../images/content2/quotes_bottom.svg) no-repeat;
+top: -50px; right: 100px;}
+
+#content .content_area .brand_story_box p:nth-of-type(3) strong{display: inline; color: yellow;}
+
+#content .content_area .brand_history_box{background: linear-gradient(143deg,rgba(214, 64, 74, 1) 0%, rgba(215, 0, 15, 1) 100%);
+padding: 100px 0;}
+#content .content_area .brand_history_box h3{color: yellow; margin: 0 auto 50px;}
+#content .content_area .brand_history_box>p:nth-of-type(1){font-weight: 700; font-size: 3rem; color: black;
+line-height: 3.5rem;}
+#content .content_area .brand_history_box ul{display: flex; justify-content: center; margin-top: 80px;}
+#content .content_area .brand_history_box ul li{width: 250px; height: 250px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+#content .content_area .brand_history_box ul li img{display: block;}
+#content .content_area .brand_history_box ul li p{display: block; color: #fff; line-height: 1.6rem;}
+#content .content_area .brand_history_box ul li p strong{font-size: 1.3rem;}
+#content .content_area .brand_history_box>img{transform: scale(0.94);}
+
+#content .content_area .brand_history_box>p:nth-of-type(2){color: #fff; font-size: 1.65em;
+margin-top: 80px;}
+
+#content .content_area .brand_category_box{background: black; padding: 100px 0;}
+#content .content_area .brand_category_box strong{font-size: 7rem; line-height: 7rem; color: #fff;}
+#content .content_area .brand_category_box p{color: yellow; font-size: 2rem; font-weight: 500; margin-top: 30px;}
+#content .content_area .brand_category_box div{width: 1400px; height: 300px; background: rgb(215, 0, 15); margin: 0 auto;
+border-radius: 20px; margin-top: 100px; display: flex; justify-content: center; align-items: center;
+background: linear-gradient(143deg,rgba(214, 64, 74, 1) 0%, rgba(215, 0, 15, 1) 100%);}
+#content .content_area .brand_category_box div img{display: block; transform: scale(0.7);}
+#content .content_area .brand_category_box ul{width: 1400px; margin: 0 auto; display: flex; justify-content: center; gap: 30px;}
+#content .content_area .brand_category_box ul li{border-radius: 20px; background: linear-gradient(143deg,rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 1) 100%); width: 326px; margin-top: 30px;}
+#content .content_area .brand_category_box ul li dl dt{font-size: 2rem; font-weight: 600; text-align: center; margin: 20px 0;
+    color: rgb(215, 0, 15); text-shadow: 2px 2px 10px rgba(0, 0, 0, .2);}
+#content .content_area .brand_category_box ul li dl dd{font-weight: 500; font-size: 1.1rem; padding: 20px; text-align: center; line-height: 2rem;}
+#content .content_area .brand_category_box>img{width: 1370px; display: block; margin: 0 auto; border-radius: 20px; border: 8px solid rgb(215, 0, 15);
+margin-top: 200px;}

@@ -1,0 +1,53 @@
+/* 고객문의 내용 콘텐츠 */
+#content .content_area{margin: 0 auto;}
+
+#content .content_area h3{font-size: 3rem; font-weight: 600; text-align: center;
+margin-bottom: 20px; padding-top: 50px;}
+
+#content .content_area .paragraph_top p:nth-of-type(1){display: block; margin: 0 auto; text-align: center;
+font-weight: 500; font-size: 1.8rem;}
+#content .content_area .paragraph_top p:nth-of-type(1) span{color: var(--font-color-main);}
+#content .content_area .paragraph_top p:nth-of-type(2){display: block; margin: 0 auto; text-align: center;
+font-weight: 400; font-size: 1.1rem; margin-top: 10px; color: var(--font-color2);}
+#content .content_area .paragraph_top p:nth-of-type(2) span{font-size: 25px; transform: translateY(5px);
+color: var(--font-color2); margin-bottom: 150px;}
+
+#content .content_area .process_box{width: 100%; height: 100%; margin: 0 auto; background: #f4f4f4;}
+#content .content_area .process_box p{font-size: 1.2rem; text-align: center;}
+#content .content_area .process_box ol{width: 1400px; display: flex; justify-content: center; gap: 70px;
+margin: 100px auto 0;}
+#content .content_area .process_box ol li{background: linear-gradient(131deg,rgba(255, 144, 79, 1) 0%, rgba(235, 99, 23, 1) 100%);
+    width: 250px; height: 350px; margin-bottom: 80px; border-radius: 20px; position: relative;}
+#content .content_area .process_box ol li dl{text-align: center; color: #fff;}
+#content .content_area .process_box ol li dl dt{font-size: 1.1rem; margin-top: 40px;}
+#content .content_area .process_box ol li dl dd span{font-size: 70px; margin-top: 30px;}
+#content .content_area .process_box ol li dl dd:nth-of-type(2){font-size: 1.4rem; margin-top: 30px; font-weight: 500;}
+#content .content_area .process_box ol li dl dd:nth-of-type(3){font-size: 1rem; margin-top: 20px;}
+
+#content .content_area .process_box ol li:nth-of-type(1)::after,
+#content .content_area .process_box ol li:nth-of-type(2)::after,
+#content .content_area .process_box ol li:nth-of-type(3)::after{content: ''; display: block; width: 42px; height: 42px; background: url(../images/content1/arrow_forward.svg) no-repeat;
+position: absolute; top: 50%; right: -56px; transform: translateY(-21px);}
+
+#content .content_area .claim_box p{font-size: 1.2rem; text-align: center;}
+#content .content_area .claim_box ul{width: 1400px; height: 100%; display: flex; justify-content: center; align-items: center;
+gap: 50px; margin: 100px auto;}
+#content .content_area .claim_box ul li{width: 350px; height: 350px; background: linear-gradient(136deg,rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%);
+ border-radius: 50%; display: flex; justify-content: center; box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, .2);}
+#content .content_area .claim_box ul li dl{text-align: center; margin-top: 80px;}
+#content .content_area .claim_box ul li dl dt{font-size: 1.6rem; font-weight: 500;}
+#content .content_area .claim_box ul li dl dd{margin-top: 20px;}
+#content .content_area .claim_box ul li:nth-of-type(1) dl dd:nth-of-type(1){font-size: 1.8rem; font-weight: 600;}
+#content .content_area .claim_box ul li:nth-of-type(2) dl a{display: block; margin-top: 90px;
+background: var(--font-color-main); color: #fff; padding: 10px 20px; border-radius: 15px;
+border: 2px solid var(--font-color-main); transition: all .3s ease-out;}
+#content .content_area .claim_box ul li:nth-of-type(2) dl a:hover{background: #fff; color: var(--font-color-main);}
+#content .content_area .claim_box ul li:nth-of-type(3) dl dd{margin-top: 80px;}
+
+#content .content_area .consumer_resolution_box{width: 100%; height: 400px; background: url(../images/content1/consumer_resolution_bg.jpg);
+background-color: rgba(0, 0, 0, .6); background-blend-mode: multiply; color: #fff;}
+#content .content_area .consumer_resolution_box p{display: block; text-align: center; font-size: 1.3rem; margin-top: 50px;}
+#content .content_area .consumer_resolution_box a{display: block; text-align: center; margin: 80px auto 0; color: #fff; background: var(--font-color-main);
+padding: 13px 0; width: 350px; font-size: 1.3rem; border: 2px solid var(--font-color-main); border-radius: 15px;
+box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2); transition: all .3s ease-out;}
+#content .content_area .consumer_resolution_box a:hover{color: var(--font-color-main); background: #fff;}

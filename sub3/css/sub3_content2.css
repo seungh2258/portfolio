@@ -1,0 +1,86 @@
+/* 기념이념 내용 콘텐츠 */
+#content .content_area{margin: 0 auto; padding-bottom: 150px;}
+
+#content .content_area .text_top{display: block; font-size: 2rem; text-align: center; font-weight: 600;
+line-height: 3.5rem; margin: 100px 0 200px; position: relative; letter-spacing: -1px; line-height: 3.5rem;}
+#content .content_area .text_top span{color: var(--font-color-main);}
+#content .content_area .text_top::before,
+#content .content_area .text_top::after{content: ""; display: block; width: 50px; height: 50px;
+position: absolute;}
+#content .content_area .text_top::before{background: url(../images/content1/quotes_top.svg) no-repeat;
+    top: -85px; left: 50%; transform: translate(-50%, -50%);}
+#content .content_area .text_top::after{background: url(../images/content1/quotes_bottom.svg) no-repeat;
+    bottom: -150px; left: 50%; transform: translate(-50%, -50%);}
+
+#content .content_area hr{height: 1px; width: 1400px; background: #ccc; border: 0;}
+
+#content .content_area h3{font-size: 2.5rem; margin: 100px auto 0; text-align: center;}
+#content .content_area h4{font-size: 2rem; text-align: center;}
+
+#content .content_area .eco_system_box h4{margin-top: 60px; color: var(--font-color-main);}
+#content .content_area .eco_system_box p{text-align: center; margin-top: 50px; font-size: 1.1rem; color: var(--font-color2);}
+#content .content_area .eco_system_box ul{width: 1400px; display: flex; justify-content: center; gap: 30px; margin: 50px auto 0;}
+#content .content_area .eco_system_box ul li{width: 300px; height: 310px;}
+#content .content_area .eco_system_box ul li dl dt{width: 100%; height: 70px; border: 1px solid var(--font-color-main);
+border-radius: 15px; color: var(--font-color-main); font-size: 1.2rem; text-align: center; line-height: 68px; font-weight: 500;}
+#content .content_area .eco_system_box ul li dl dd{width: 100%; height: 225px; border: 1px solid var(--font-color2);
+border-radius: 20px; margin-top: 15px; text-align: center; line-height: 70px; color: var(--font-color2);}
+
+#content .content_area .climate_action{margin-top: 200px;}
+#content .content_area .climate_action p{display: block; margin: 0 auto; text-align: center; font-size: 1.6rem; font-weight: 500;
+margin-top: 10px;}
+#content .content_area .climate_action .climate_action_4m_1{background: url(../images/content2/climate_action_bg.svg) no-repeat; width: 100%; height: 500px; margin-top: 50px;
+display: flex; justify-content: center; gap: 200px; align-items: center;}
+#content .content_area .climate_action .climate_action_4m_1 li:nth-of-type(1){transform: translateY(-15%);}
+#content .content_area .climate_action .climate_action_4m_1 li:nth-of-type(2){transform: translateY(25%);}
+#content .content_area .climate_action .climate_action_4m_1 li:nth-of-type(3){transform: translateY(-35%);}
+#content .content_area .climate_action .climate_action_4m_1 li div{width: 150px; height: 150px; background: linear-gradient(131deg,rgba(255, 144, 79, 1) 0%, rgba(235, 99, 23, 1) 100%);
+border-radius: 50%; transition: all .3s ease-out; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative;
+z-index: 20;}
+#content .content_area .climate_action .climate_action_4m_1 li div:hover{transform: scale(2); box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, .2);}
+#content .content_area .climate_action .climate_action_4m_1 li div span{font-size: 50px; color: #fff; transition: all .3s ease-out;}
+#content .content_area .climate_action .climate_action_4m_1 li div:hover span{transform: translateX(-100px);}
+#content .content_area .climate_action .climate_action_4m_1 li div p{font-size: 11px; position: absolute; transform: translateX(200px); color: #fff; line-height: 1.5rem; padding-bottom: 10px;
+transition: all .3s ease-out;}
+#content .content_area .climate_action .climate_action_4m_1 li div:hover p{transform: translateX(0);}
+#content .content_area .climate_action .climate_action_4m_1 li strong{display: block; text-align: center; margin-top: 10px; color: var(--font-color2);
+font-size: 2rem; transition: all .3s ease-out; z-index: 10;}
+#content .content_area .climate_action .climate_action_4m_1 li:hover strong{transform: translateY(-60px);}
+
+#content .content_area .climate_action .detailed_strategy{background: url(../images/content2/bg3.png); height: 700px; margin-top: 100px;}
+#content .content_area .climate_action .detailed_strategy h4{margin-bottom: 50px; color: #fff; padding-top: 40px;}
+#content .content_area .climate_action .detailed_strategy ul{width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;}
+#content .content_area .climate_action .detailed_strategy ul li{width: 500px; height: 250px; border-radius: 10px; position: relative;
+overflow: hidden; transition: all .3s ease-out;}
+#content .content_area .climate_action .detailed_strategy ul li:nth-of-type(1){background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content2/4m_1.png); transition: all .3s ease-out;}
+#content .content_area .climate_action .detailed_strategy ul li:nth-of-type(2){background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content2/4m_2.png);}
+#content .content_area .climate_action .detailed_strategy ul li:nth-of-type(3){background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content2/4m_3.png);}
+#content .content_area .climate_action .detailed_strategy ul li:nth-of-type(4){background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content2/4m_4.png);}
+
+#content .content_area .climate_action .detailed_strategy ul li dt{font-size: 1.7rem; font-family: "Roboto", sans-serif; font-weight: 500;
+position: relative; left: 25px; bottom: -200px; color: #fff; transition: all .3s ease-out;}
+#content .content_area .climate_action .detailed_strategy ul li dd{position: relative; left: 25px; bottom: -250px; color: #fff; transition: all .3s ease-out; text-shadow: 2px 2px 5px rgba(0, 0, 0, .2);}
+#content .content_area .climate_action .detailed_strategy ul li:hover{transform: scale(1.05); box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, .4);}
+#content .content_area .climate_action .detailed_strategy ul li:hover dt{transform: translateY(-40px);}
+#content .content_area .climate_action .detailed_strategy ul li:hover dd{transform: translateY(-80px);}
+
+#content .content_area .eco_cube{width: 1400px; margin: 70px auto 0; display: flex; justify-content: center; gap: 60px;}
+#content .content_area .cube_box{width: 300px; height: 400px; position: relative; perspective: 600px;}
+#content .content_area .cube_box .slide_cube{width: 100%; height: 100%; transform: translateZ(-150px); transform-style: preserve-3d;
+transition: all .5s ease-out;}
+#content .content_area .cube_box:hover .slide_cube{transform: translateZ(-150px) rotate3d(0, 1, 0, -90deg);}
+#content .content_area .cube_box .slide_cube .cube_face{position: absolute; width: 100%; height: 100%;}
+#content .content_area .cube_box .slide_cube .cube_front{background: linear-gradient(131deg,rgba(255, 144, 79, 1) 0%, rgba(235, 99, 23, 1) 100%); transform: rotateY(0) translateZ(150px);
+display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 70px; color: #fff; border: 2px solid rgb(224, 127, 0);}
+#content .content_area .cube_box .slide_cube .cube_right{background: linear-gradient(134deg,rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%); transform: rotateY(90deg) translateZ(150px); border: 2px solid var(--font-color-main);
+display: flex; justify-content: center; align-items: center;}
+#content .content_area .cube_box .slide_cube .cube_front p{display: block; font-size: 2rem; font-weight: 500;}
+#content .content_area .cube_box .slide_cube .cube_front span{font-size: 100px;}
+#content .content_area .cube_box .slide_cube .cube_right p{display: block; font-size: 1.2rem; text-align: center; line-height: 2.5rem;
+color: var(--font-color-main); font-weight: 500;}
+
+
+
+/* border: 1px solid var(--font-color2); */
+
+/* border: 1px solid var(--font-color-main); */

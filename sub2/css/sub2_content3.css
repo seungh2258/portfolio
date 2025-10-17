@@ -1,0 +1,83 @@
+/* 기념이념 내용 콘텐츠 */
+#content .content_area{margin: 0 auto; padding-bottom: 150px;}
+
+#content .content_area .top_img{background-image: url(../images/content3/top_img.jpg);
+    background-position: center; width: 100%; height: 500px;
+margin: 0 auto;}
+#content .content_area h3{font-size: 2.5rem; text-align: center; margin: 100px 0 50px;}
+
+
+
+/* 1. 이건 전중윤 */
+
+#content .content_area .eventSlideMenu{width:1400px; height:700px;  position:relative; overflow: hidden;
+margin: 0 auto; border-radius: 10px; z-index: 10; box-shadow: -4px 4px 15px rgba(0, 0, 0, .2);}
+#content .content_area .eventSlideMenu ul{margin:0; padding:0;}
+#content .content_area .eventSlideMenu li{width:1200px; height:700px; position:absolute; top:0; border:1px solid #d7d7d7; border-radius: 10px;}
+#content .content_area .eventSlideMenu .img01{left:0; background: url(../images/content3/paper_01.png);}
+#content .content_area .eventSlideMenu .img02{left:1000px; background: url(../images/content3/paper_02.png);}
+#content .content_area .eventSlideMenu .img03{left:1100px; background: url(../images/content3/paper_03.png)}
+#content .content_area .eventSlideMenu ul li a{color: #fff; text-decoration: none;}
+#content .content_area .eventSlideMenu ul li span{width:100px; height:700px; display:block; cursor:pointer; position:absolute; 
+    left:0; top:0; z-index: 30; border-right: 1px solid #aaa;}
+
+#content .content_area .eventSlideMenu_box{position: relative;}
+#content .content_area .eventSlideMenu_box::before{content: ""; display: block; width: 500px; height: 800px; position: absolute;
+  background: url(../images/content3/book_bottom.png) no-repeat; top: -8%; right: 0; z-index: 1;}
+#content .content_area .eventSlideMenu_box::after{content: ""; display: block; width: 500px; height: 800px; position: absolute;
+  background: url(../images/content3/book_top.png) no-repeat; top: -8%; right: 0; z-index: 20; pointer-events: none;}
+
+#content .content_area .eventSlideMenu_box li{display: flex;}
+#content .content_area .eventSlideMenu_box .eventSlideMenu ul li .accordion_title{display: block; writing-mode: vertical-lr; font-size: 2rem; font-weight: 500;
+letter-spacing: 1.2rem; margin: 30px 20px 30px; color: var(--font-color2); padding-top: 20px; border-radius: 10px;}
+#content .content_area .eventSlideMenu_box .eventSlideMenu ul li .accordion_box{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#content .content_area .eventSlideMenu_box .eventSlideMenu ul li .accordion_box strong{font-size: 2rem;}
+#content .content_area .eventSlideMenu_box .eventSlideMenu ul li .accordion_text{ font-size: 1.2rem; width: 390px; margin: 40px 5px 50px 40px; line-height: 2.5rem; text-align: center; color: var(--font-color2);}
+#content .content_area .eventSlideMenu_box li img{display: block; transform: scale(.8); border-radius: 10px;}
+#content .content_area .eventSlideMenu_box li strong{}
+
+/* 2. 삼양식품의 역사 */
+
+.characters{position: relative; width: 1400px; margin: 200px auto; background: url(../images/content3/history_bg.png); background-size: cover; border-radius: 20px;
+             overflow: hidden; box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, .2);}
+#content .content_area .characters>.title{text-align: center; margin-top:70px; color: var(--font-color1); text-shadow: 2px 2px 15px rgba(0, 0, 0, .2);}
+.characters .charbox{}
+.characters .charbox img{display: block; border-radius: 15px;
+position: relative; left: 50%; transform: translateX(-50%); margin: 80px 0;}
+.characters .gallery-thumbs{}
+.characters .gallery-thumbs dt{font-size: 80px; font-weight: 600; color: var(--font-color1); text-shadow: 2px 2px 15px rgba(0, 0, 0, .2);}
+.characters .gallery-thumbs .text{margin-bottom: 20px; width: 1200px; margin: 0 auto; text-shadow: 2px 2px 15px rgba(0, 0, 0, .2);}
+.characters .gallery-thumbs .text .main_t{display: block; font-size: 1.3rem; color: var(--font-color2);}
+.characters .gallery-thumbs .text .main_t span{font-size: 2.7rem; font-weight: 500; margin-bottom: 20px;}
+.characters .gallery-thumbs ul{margin: 40px 0; height: 100px; overflow: hidden; display: flex; justify-content: center; align-items: center; gap: 32px;}
+.characters .gallery-thumbs ul li{background: #fff; padding: 1px 20px; border-radius: 15px; box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, .2);
+display: flex; justify-content: center; align-items: center; height: 60px;}
+.characters .gallery-thumbs ul li a{display: block; text-align: center; font-size: 1.6rem;}
+.characters .gallery-thumbs ul li img{width: 100%; border-radius: 10px;}
+.characters .gallery-thumbs ul li a.current {color: var(--font-color-main);}
+
+
+/* 3. 추억의 제품 */
+
+.swiper_box_1{width: 1400px; margin: 50px auto 200px; border-radius: 15px; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .2);}
+.swiper_box_1 .swiper_1{width: 100%; height: auto; background: url(../images/content3/retro_product_bg.png); border-radius: 15px;}
+.swiper_box_1 .swiper-slide{text-align: center; height: 500px; color: #fff; display: flex; flex-direction: column;
+justify-content: center; align-items: center; gap: 20px;}
+.swiper_box_1 .swiper-slide img{display: block; width: 200px; height: 200px;}
+.swiper_box_1 .swiper-slide strong{font-size: 1.7rem;}
+.swiper_box_1 .swiper-slide p{display: block; width: 350px;}
+
+
+/* 4. 우지사건 */
+
+.swiper_box_2{width: 1400px; margin: 50px auto; border-radius: 15px; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .2);}
+.swiper_box_2 .swiper_2{width: 100%; height: auto; border-radius: 15px;}
+.swiper_box_2 .swiper-slide{text-align: center; background: url(../images/content3/uzi_bg.png); height: 600px; color: #fff;
+display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px;}
+.swiper_box_2 .swiper-slide strong{display: block; font-size: 2.2rem;}
+.swiper_box_2 .swiper-slide p{display: block; font-size: 1.2rem; width: 80%;}
+.swiper_box_2 .swiper-slide span{color: var(--font-color-main);}
+
+.swiper_box_2 .swiper-slide:nth-of-type(1) p:nth-of-type(1){font-size: 1.5rem;}
+.swiper_box_2 .swiper-slide:nth-of-type(1) p:nth-of-type(2){font-size: 2rem;}
+.swiper_box_2 .swiper-slide:nth-of-type(1) strong{font-size: 3.4rem;}

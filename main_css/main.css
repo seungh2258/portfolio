@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/* @@@@@ 메인 비주얼 영역 @@@@@ */
+.visual{width: 2000px; height: 1050px; position: relative; left: 50%; top: 0;
+transform: translateX(-50%); background: #000; position: relative;}
+
+.gallery{position:relative; left:0; top:0; overflow:hidden; width:2000px; height:1050px;}
+.gallery li{display:none; position: absolute;}
+.gallery img{animation: ani 30s linear infinite;}
+@keyframes ani {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+.gallery li .visual_text_1{position: absolute; left: 18%; top: 450px; opacity: 0; font-size: 3.5rem; color: #fff; text-shadow: 2px 2px 15px rgba(0, 0, 0, .5); font-weight: 500;}
+.gallery li .visual_text_1 strong{color: var(--font-color-main); font-weight: 500;}
+.gallery li .visual_text_2{position: absolute; left: 18%; top: 500px; opacity: 0; font-size: 2.3rem; color: #fff; text-shadow: 2px 2px 15px rgba(0, 0, 0, .5);}
+.gallery li .visual_text_2 strong{color: var(--font-color-main); font-weight: 400;}
+
+.dock{width:240px; position:absolute; left:50%; bottom:150px; transform: translateX(-120px);
+background: rgba(0, 0, 0, .4); padding: 15px; display: flex; justify-content: center; align-items: center; border-radius: 18px;}
+.dock .mbutton{margin-right:15px; cursor:pointer; display:block; float:left; width:20px; height:20px; background: #fff; border-radius:15px; transition: all .5s; transform: translateX(-40px);}
+.dock .ps{margin-right:15px; margin-top: -5px; cursor:pointer; display:block; float:left; width:25px; height:25px; transform: translateX(-30px);}
+.dock .ps i{font-size: 30px; color: var(--font-color-main);}   
+
+.visual .btn{display: block; width: 30px; height: 30px; position: absolute;  bottom:160px; cursor:pointer;}
+.visual .btn .material-symbols-rounded{font-size: 30px; font-weight: 600; color: var(--font-color-main); text-shadow: 1px 1px 5px rgba(0, 0, 0, .6);}
+.visual .btnLeft{left:50%; margin-left: 70px;}
+.visual .btnRight{left:50%; margin-left: 100px;}
+
+
+/* @@@@@ 본문 콘텐츠 영역 @@@@@ */
+#content{}
+#content h3{font-size: var(--font-size-h3); text-align: center;}
+#content h4{font-size: var(--font-size-h4);}
+
+.btn_more {display: inline-block; width: 120px; text-align: center; color: #fff; background: var(--font-color-main); font-size: 1rem;
+  position: relative; border: 2px solid var(--font-color-main); padding: 12px 40px 12px 20px; border-radius: 20px; box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.2); transition: all 0.5s ease-out;}
+.btn_more span {color: #fff; position: absolute; left: 50%; top: 12px; margin-left: 30px; transition: all 0.5s ease-out;}
+.btn_more:hover {color: var(--font-color-main); background: #fff;}
+.btn_more:hover span {color: var(--font-color-main); margin-left: 40px;}
+
+
+/* @@@@@ 회사소개 섹션 @@@@@ */
+#content .introduction{}
+#content .introduction h3{margin-top: 100px; margin-bottom: 50px;}
+#content .introduction h3 span{color: var(--font-color-main);}
+#content .introduction p span{color: var(--font-color-main); font-weight: 600;}
+#content .introduction .introduction_top_img{display: block; margin: auto;}
+#content .introduction .introduction_top_text{font-size: var(--font-size-IndexParagraph); text-align: center;
+                                        margin-bottom: 200px;}
+
+#content .introduction ul li .introduction_1{width: 1400px; height: 600px; overflow: hidden; margin: auto; margin-bottom: 150px;
+                                        display: flex; justify-content: center; align-items: center; gap: 50px;}
+#content .introduction ul li .introduction_1_img{width: 645px; height: 590px; overflow: hidden; position: relative;
+                                                float: left;}
+#content .introduction ul li .introduction_1_img img:nth-of-type(1){border: 10px solid var(--font-color-main);
+                                                            border-radius: 50%; box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 20%);}
+#content .introduction ul li .introduction_1_img img:nth-of-type(2){display: block; position: absolute;
+                                                                    top: 41px; right: 0px; }
+#content .introduction ul li .introduction_1_text{width: 580px; height: 247px; overflow: hidden; float: right; padding: 20px;}
+#content .introduction ul li .introduction_1_text p{font-size: var(--font-size-IndexParagraph); margin: 30px 0 30px 0;}
+
+#content .introduction ul li .introduction_2{width: 1400px; height: 620px; overflow: hidden; margin: auto; display: flex; justify-content: center; align-items: center; gap: 5px; margin-bottom: 100px;}
+#content .introduction ul li .introduction_2_text{width: 725px; height: 247px; overflow: hidden; float: left; text-align: right; padding: 20px;}
+#content .introduction ul li .introduction_2_text p{font-size: var(--font-size-IndexParagraph); margin: 30px 0 30px 0;}
+
+#content .introduction ul .introduction_2_img{width: 700px; height: 615px; overflow: hidden; position: relative; float: right; display: flex; justify-content: center; align-items: center;}
+#content .introduction ul li .introduction_2_img img:nth-of-type(1){margin: auto; border: 10px solid var(--font-color-main); box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 20%);}
+#content .introduction ul li .introduction_2_img img:nth-of-type(2){display: block; position: absolute; top: 140px; left: 10px;}
+#content .introduction ul li .introduction_2_img img:nth-of-type(3){display: block; position: absolute; top: 140px; right: 15px;}
+
+
+
+/* @@@@@ 브랜드 섹션 @@@@@ */
+#content .brand{max-width: 100%; height: 1105px; background: linear-gradient(180deg,rgba(235, 99, 23, 1) 0%, rgba(240, 140, 81, 1) 100%);}
+#content .brand .brand_inner{width: 100%; max-width: 1400px; height: 1105px; margin: 0 auto; padding: 100px 0 100px 0;}
+#content .brand h3{color: #fff;}
+#content .brand .brand_text{color: #fff; font-size: var(--font-size-IndexParagraph); text-align: center; margin: 30px 0 50px 0;}
+
+#content .brand_inner ul{height: 750px; overflow: visible; list-style: none; display: flex; justify-content: center; align-items: center; gap: 20px;}
+#content .brand_inner ul li{position: relative; overflow: hidden; width: 335px; height: 680px; background: #fff; border-radius: 20px; box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 20%);
+                          display: flex; justify-content: flex-start; align-items: center; flex-direction: column; text-align: center;
+                          transition: transform 0.5s ease-out;}
+#content .brand_inner ul li:nth-of-type(1){background: url(../main_images/brand_background_1.jpg);}
+#content .brand_inner ul li:nth-of-type(2){background: url(../main_images/brand_background_2.jpg);}
+#content .brand_inner ul li:nth-of-type(3){background: url(../main_images/brand_background_3.jpg);}
+#content .brand_inner ul li:nth-of-type(4){background: url(../main_images/brand_background_4.jpg);}
+
+#content .brand_inner ul li:nth-of-type(1),
+#content .brand_inner ul li:nth-of-type(3){margin-top: 50px;}
+
+
+/* 브랜드 로고 이미지 */
+#content .brand_inner ul .brand_logo_1{width: 100%; height: 300px; background: url(../main_images/brand_logo_1.png); background-repeat: no-repeat; text-indent: -9999px; background-position: center 70px; z-index: 3;
+                                                                                    position: relative; transition: all .5s ease-out;}
+#content .brand_inner ul .brand_logo_2{width: 100%; height: 300px; background: url(../main_images/brand_logo_2.png); background-repeat: no-repeat; text-indent: -9999px; background-position: center 60px; z-index: 3; position: relative; transition: all .5s ease-out;}
+#content .brand_inner ul .brand_logo_3{width: 100%; height: 300px; background: url(../main_images/brand_logo_3.png); background-repeat: no-repeat; text-indent: -9999px; background-position: center 50px; z-index: 3; position: relative; transition: all .5s ease-out;}
+#content .brand_inner ul .brand_logo_4{width: 100%; height: 300px; background: url(../main_images/brand_logo_4.png); background-repeat: no-repeat; text-indent: -9999px; background-position: center 85px; z-index: 3; position: relative; transition: all .5s ease-out;}
+
+#content .brand_inner ul li:hover h4{transform: scale(1.2) translateY(50px);}
+
+/* 각 브랜드 설명 + 자세히보기 버튼 */
+#content .brand_inner ul .brand_overlay{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0);
+  display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px; box-sizing: border-box; transition: all 0.4s ease-out; z-index: 2;}
+#content .brand_inner ul .brand_overlay p{margin: 100px 0 50px 0;}
+#content .brand_inner ul .brand_overlay p, .brand_overlay .btn_more{opacity: 0; transform: translateY(30px); transition: all .5s ease-out; color: #fff;}
+
+#content .brand_inner ul li:hover .brand_overlay{background: rgba(0, 0, 0, .6);}
+#content .brand_inner ul li:hover .brand_overlay p,
+#content .brand_inner ul li:hover .brand_overlay .btn_more{opacity: 1; transform: translateY(0); color: #fff;}
+#content .brand_inner ul li:hover .brand_overlay .btn_more:hover{background: #fff; color: var(--font-color-main);}
+
+
+
+/* @@@@@ 지속경영 섹션 @@@@@ */
+#content .sustainability{width: 1400px; margin: 100px auto;}
+#content .sustainability .sustainability_text span{color: var(--font-color-main); font-weight: 600;}
+#content .sustainability .sustainability_text{font-size: var(--font-size-IndexParagraph); text-align: center; margin-top: 70px;}
+#content .sustainability img{display: block;}
+
+#content .sustainability li:nth-of-type(2) div{text-align: right;}
+#content .sustainability ul{margin-top: 170px;}
+#content .sustainability ul li{display: flex; justify-content: center; align-items: center; gap: 90px;
+                                margin-bottom: 100px;}
+#content .sustainability ul li div h4 span{font-size: var(--font-size-IndexParagraph); color: var(--font-color-point2); font-weight: 300;}
+#content .sustainability ul li div p{font-size: var(--font-size-IndexParagraph); margin: 10px 0 20px 0;}
+#content .sustainability ul li div p span{color: var(--font-color-point1); font-weight: 600;}
+
+
+#content .sustainability ul li:nth-of-type(2) div{text-align: right;}
+
+
+
+/* @@@@@ News & Media 섹션 @@@@@ */
+
+#content .news_media {max-width: 100%; background: var(--font-color-sub);}
+#content .news_media_inner {width: 100%; max-width: 1400px; height: 100%; margin: 0 auto; padding: 100px 0; position: relative;}
+#content .news_media_inner h3::after{content: ""; position: absolute; left: 50%; top: 215px; transform: translateX(-50%);
+display: block; height: 520px; width: 2px; background: #ccc;}
+
+#content .news_media_inner ul {display: flex; justify-content: center; align-items: center; margin-top: 36px;}
+#content .news_media_inner ul li {border-radius: 20px; background: #fff; box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.2); overflow: hidden; position: relative;}
+#content .news_media_inner ul li:nth-of-type(1) {width: 678px; height: 536px; margin-right: 20px;}
+#content .news_media_inner ul li:nth-of-type(2) {width: 329px; height: 536px; margin-left: 20px;}
+#content .news_media_inner ul li:nth-of-type(3) {width: 329px; height: 536px; margin-left: 20px;}
+
+#content .news_media_inner ul li a {display: block; text-decoration: none; color: inherit; height: 100%;}
+#content .news_media_inner ul li img {display: block; border-radius: 15px; margin: 20px auto;}
+#content .news_media_inner ul li dl {margin: 0 20px;}
+#content .news_media_inner ul li dl dt {font-size: 1.38rem; font-weight: bold; color: var(--font-color1); white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;}
+#content .news_media_inner ul li dl dt span {font-family: "Roboto", sans-serif; font-size: 16px; color: var(--font-color-point1); font-weight: 500;}
+#content .news_media_inner ul li dl dd {margin: 2px 0 8px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+
+
+/* @@@@@ 고객지원 섹션 @@@@@ */
+
+#content .support {max-width: 100%; height: 720px; background: url(../main_images/support_background.jpg);}
+#content .support_inner {width: 100%; max-width: 1400px; height: 720px; margin: 0 auto; padding: 100px 0;}
+#content .support h3 {color: #fff;}
+#content .support ul {display: flex; justify-content: center; align-items: center; gap: 73px; margin-top: 50px;}
+#content .support ul li {width: 400px; height: 400px; perspective: 1000px;}
+.card {width: 100%; height: 100%; position: relative; transition: transform 0.8s; transform-style: preserve-3d;
+  border-radius: 50%; box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.2); transform-origin: center center;}
+.card-link {display: block; width: 100%; height: 100%; text-decoration: none; color: inherit;}
+.card-link:hover {text-decoration: none;}
+#content .support ul li:hover .card {transform: rotateY(180deg);}
+.card .front,
+.card .back {position: absolute; width: 100%; height: 100%; border-radius: 50%; backface-visibility: hidden; display: flex;
+  flex-direction: column; justify-content: center; align-items: center; text-align: center; transition: all 0.3s; padding: 0 20px; box-sizing: border-box;}
+
+.card span.material-symbols-rounded {font-size: 100px; margin-bottom: 10px;}
+.card h4 {font-size: var(--font-size-h4); margin: 10px 0 5px;}
+.card .card_title{font-size: var(--font-size-h4); margin: 10px 0 5px; font-weight: bold;}
+.card p {font-size: 1.25rem; margin: 0;}
+.card .front {background: var(--font-color-main); color: white;}
+.card .back {background: white; color: var(--font-color-main); transform: rotateY(180deg);}
+.card .front.light {background: #fff; color: var(--font-color-main);}
+.card .back.light {background: var(--font-color-main); color: #fff;}
+
+

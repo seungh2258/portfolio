@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼양식품</title>
+    <link rel="shortcut icon" type="image/x-icon"  href="./favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./main_css/main.css">
+    <link rel="stylesheet" href="./common/css/aos.css">
+
+    <script src="https://kit.fontawesome.com/0f5e650a6c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="skipNav">
+      <a href="#content">본문 바로가기</a>
+      <a href="#gnb">글로벌 내비게이션 바로가기</a>
+    </div>
+
+    <div id="wrap">
+      <!-- 헤더 영역 -->
+
+      <? include "./common/main_header.html" ?>
+      
+
+
+
+      
+      <!-- 전체 제품 검색창 -->
+      <div class="product_pop">
+        <div class="total_serch_box">
+            <p>제품명 검색</p>
+            <label for="total_title"></label>
+            <input id="total_title" type="text" placeholder="EX&#41; 삼양라면">
+            <button id="total_btn" type="button">검색</button>
+        </div>
+      </div>
+
+
+
+
+      <!-- 비주얼 영역 -->
+      <div class="visual">
+        <div class="gallery">
+          <ul>
+            <li class="link1">
+              <img src="./main_images/visual_1.jpg" alt='' >
+              <span class="visual_text_1">세상에 없던 <strong>가치</strong>를 전하다.</span>
+              <span class="visual_text_2">Delivering <strong>value</strong> the world has never seen.</span>
+            </li>
+            <li class="link2">
+              <img src="./main_images/visual_2.jpg" alt='' >
+              <span class="visual_text_1">맛으로 <strong>세계</strong>를 잇다.</span>
+              <span class="visual_text_2">Connecting the <strong>world</strong> through flavor.</span>
+            </li>
+            <li class="link3">
+              <img src="./main_images/visual_3.jpg" alt='' >
+              <span class="visual_text_1">일상에 <strong>특별함</strong>을 더하다.</span>
+              <span class="visual_text_2">Adding a touch of <strong>delight</strong> to everyday life.</span>
+            </li>
+          </ul>
+        </div>
+          
+        <div class="dock">
+          <span class="mbutton  btn1" ></span>
+          <span class="mbutton  btn2" ></span>
+          <span class="mbutton  btn3" ></span>
+          <span class="ps" ><span class="hidden">stop</span><i class="fa-regular fa-circle-stop"></i></span>
+        </div>
+          
+        <span class="btn btnLeft"><span class="material-symbols-rounded">arrow_back_ios</span></span>
+        <span class="btn btnRight"><span class="material-symbols-rounded">arrow_forward_ios</span></span>
+      </div>
+
+      <!-- 컨텐츠 시작 -->
+      <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>
+
+        <!-- 회사소개 섹션 -->
+        <section class="introduction">
+          <h3 data-aos="fade-up"><span>K-Food 글로벌 열풍</span>을 선도하는<br>삼양식품</h3>
+          <img data-aos="fade-up" class="introduction_top_img" src="./main_images/introduction_top.png" alt="">
+          <p data-aos="fade-up" class="introduction_top_text">
+            <span>업계 최초</span>로 한국 라면을 베트남에 수출하여 해외 시장에 진출한 삼양식품은<br>
+            현재 전 세계 90여개 국으로 제품을 수출하며 <span>K-Food 열풍</span>을 이끌고 있습니다.
+          </p>
+          <ul>
+            <li>
+              <div data-aos="fade-right" class="introduction_1">
+                <div class="introduction_1_img">
+                  <img src="./main_images/introduction_1_1.png" alt="">
+                  <img src="./main_images/introduction_1_2.png" alt="">
+                </div>
+                <div class="introduction_1_text">
+                  <h4><span>국내 식품 산업</span>에 큰 획을 긋다</h4>
+                  <p>1961년 창업한 삼양식품은 <span>'정직과 신용'</span>의 창업정신으로 한국 식품산업의 새로운 영역을 개척하며 성장해왔습니다.</p>
+                  <a href="./sub2/sub2_3.html" class="btn_more">삼양역사관<span class="material-symbols-rounded">arrow_right_alt</span></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div data-aos="fade-left" class="introduction_2">
+                <div class="introduction_2_text">
+                  <h4><span>K-Food</span> 열풍을 선도하다</h4>
+                  <p>삼양식품의 해외 진출은 <span>불닭브랜드</span>의 인기로 본격화되면서 <br>
+                    해외사업부문의 빠른 성장을 이끌었고 지속적으로 확대하고 있습니다.</p>
+                  <a href="./sub1/sub1_1.html" class="btn_more">회사소개<span class="material-symbols-rounded">arrow_right_alt</span></a>
+                </div>
+                <div class="introduction_2_img">
+                  <img src="./main_images/introduction_2_1.png" alt="">
+                  <img src="./main_images/introduction_2_2.png" alt="">
+                  <img src="./main_images/introduction_2_3.png" alt="">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 브랜드 섹션 -->
+        <section class="brand">
+          <div class="brand_inner">
+            <h3>브랜드</h3>
+            <p class="brand_text">건강하고 창의적인 미래를 만들기 위한 삼양식품의 다양한 브랜드를 소개합니다.</p>
+            <ul data-aos="fade-up">
+              <li data-aos="fade-right" data-aos-delay="0">
+                  <h4 class="brand_logo_1">삼양라면</h4>
+                  <div class="brand_overlay">
+                    <p>라면의 원조, 삼양라면은<br>기본에 충실한 삼양의 대표 브랜드입니다.</p>
+                    <a href="./sub4/sub4_1.html" class="btn_more">더보기<span class="material-symbols-rounded">arrow_right_alt</span></a>
+                  </div>
+              </li>
+              <li data-aos="fade-down" data-aos-delay="200">
+                  <h4 class="brand_logo_2">불닭볶음면</h4>
+                  <div class="brand_overlay">
+                    <p>불닭 브랜드가 가야할 성장의 모습은<br>'Global No.1 Spicy Brand' 입니다.</p>
+                    <a href="./sub4/sub4_2.html" class="btn_more">더보기<span class="material-symbols-rounded">arrow_right_alt</span></a>
+                  </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="400">
+                  <h4 class="brand_logo_3">맵탱</h4>
+                  <div class="brand_overlay">
+                    <p>맵콤한 국물이 필요한 순간 맵탱!<br>다채로운 매운맛의 국물 라면입니다.</p>
+                    <a href="./sub4/sub4_3.html" class="btn_more">더보기<span class="material-symbols-rounded">arrow_right_alt</span></a>
+                  </div>
+              </li>
+              <li data-aos="fade-left" data-aos-delay="600">
+                  <h4 class="brand_logo_4">짜짜로니</h4>
+                  <div class="brand_overlay">
+                    <p>1970년, 삼양 짜장면을 시작으로<br>지금까지 이어지는 삼양의 짜장 맛입니다.</p>
+                    <a href="./sub4/sub4_4.html" class="btn_more">더보기<span class="material-symbols-rounded">arrow_right_alt</span></a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 지속경영 섹션 -->
+        <section class="sustainability">
+          <div class="sustainability_inner">
+            <h3>지속경영</h3>
+            <p class="sustainability_text">삼양식품은 <span>지속가능경영</span>을 통해<br><span>건강하고 즐거운 세상</span>을 만들어가겠습니다.</p>
+            <ul>
+              <li data-aos="fade-right">
+                <img src="./main_images/sustainability_1.png" alt="">
+                <div>
+                  <h4>환경 <span>Environmental</span></h4>
+                  <p>제품과 서비스가 환경에 미치는 영향을 최소화하고,<br><span>저탄소&middot;친환경 경영</span>을 달성할 수 있도록 최선을 다하겠습니다.</p>
+                  <a href="./sub3/sub3_2.html" class="btn_more">자세히보기<span class="material-symbols-rounded">arrow_right_alt</span>
+                  </a>
+                </div>
+              </li>
+              <li data-aos="fade-left">
+                <div>
+                  <h4><span>social </span>사회</h4>
+                  <p>사업장에서 발생할 수 있는 위험요인을 파악하고 예방&middot;관리하여<br><span>안전하고 쾌적한 근무 환경을 제공</span>하고자 노력합니다.</p>
+                  <a href="./sub3/sub3_3.html" class="btn_more">자세히보기<span class="material-symbols-rounded">arrow_right_alt</span></a>
+                </div>
+                <img src="./main_images/sustainability_2.png" alt="">
+              </li>
+              <li data-aos="fade-right">
+                <img src="./main_images/sustainability_3.png" alt="">
+                <div>
+                  <h4>지배구조 <span>Governance</span></h4>
+                  <p><span>투명하고 공정한 거버넌스 체계를 구축</span>하고자 노력합니다.</p>
+                  <a href="./sub3/sub3_4.html" class="btn_more">자세히보기<span class="material-symbols-rounded">arrow_right_alt</span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- News & Media 섹션 -->
+        <section class="news_media">
+          <div class="news_media_inner">
+            <h3>News & Media</h3>
+            <ul data-aos="fade-up">
+              <li data-aos="fade-up" data-aos-delay="0">
+                <a href="./sub2/sub2_2.html">
+                  <img src="./main_images/media_thumbnail.jpg" alt="">
+                  <dl>
+                    <dt><span>MEDIA</span><br>2023 삼양식품 그룹 비전 선포 영상</dt>
+                    <dd>식품의 무한한 가능성과 질서와 혁신의 과학이 만나 삼양라운드스퀘어로 새롭게 태어납니다.</dd>
+                    <dd>2023.09.14</dd>
+                  </dl>
+                </a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <a href="https://mayame513.mycafe24.com/gb/bbs/board.php?bo_table=notice">
+                  <img src="./main_images/news1_thumbnail.jpg" alt="">
+                  <dl>
+                    <dt><span>NEWS</span><br>불닭 틱톡 계정 팔로워 100만 돌파...'글로벌 Z세대 열광시키는 매운맛 콘텐츠의 힘'</dt>
+                    <dd>삼양식품이 선보인 불닭소스 글로벌 캠페인 영상이 조회수 1억뷰를 돌파하며, 전 세계적으로 폭발적인 반응을 얻고 있다.</dd>
+                    <dd>2025.06.16</dd>
+                  </dl>
+                </a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="400">
+                <a href="https://mayame513.mycafe24.com/gb/bbs/board.php?bo_table=notice">
+                  <img src="./main_images/news2_thumbnail.jpg" alt="">
+                  <dl>
+                    <dt><span>NEWS</span><br>삼양식품 밀양 제2공장 준공... 해외 공략 핵심 인프라 완성</dt>
+                    <dd>삼양식품은 11일 경남 밀양시 부북면 나노융합국가산업단지에서 ‘밀양 제2공장 준공식’을 열고, 본격적인 가동에 돌입했다.</dd>
+                    <dd>2025.06.11</dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 고객지원 섹션 -->
+        <section class="support">
+          <div class="support_inner">
+            <h3>고객지원</h3>
+            <ul>
+              <li data-aos="flip-left" data-aos-delay="0">
+                <a href="./sub6/sub6_1.html" class="card-link">
+                  <div class="card">
+                    <div class="front">
+                      <span class="material-symbols-rounded">support_agent</span>
+                      <h4>고객만족센터</h4>
+                      <p>더 나은 서비스를 위해 노력합니다.</p>
+                    </div>
+                    <div class="back">
+                      <span class="material-symbols-rounded">support_agent</span>
+                      <p class="card_title">고객만족센터</p>
+                      <p>더 나은 서비스를 위해 노력합니다.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li data-aos="flip-left" data-aos-delay="200">
+                <a href="./sub6/sub6_2.html" class="card-link">
+                  <div class="card">
+                    <div class="front light">
+                      <span class="material-symbols-rounded">person</span>
+                      <h4>고객문의</h4>
+                      <p>소중한 의견을 들려주세요.</p>
+                    </div>
+                    <div class="back light">
+                      <span class="material-symbols-rounded">person</span>
+                      <p class="card_title">고객문의</p>
+                      <p>소중한 의견을 들려주세요.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li data-aos="flip-left" data-aos-delay="400">
+                <a href="./sub6/sub6_3.html" class="card-link">
+                  <div class="card">
+                    <div class="front">
+                      <span class="material-symbols-rounded">contact_support</span>
+                      <h4>FAQ</h4>
+                      <p>자주 묻는 질문.</p>
+                    </div>
+                    <div class="back">
+                      <span class="material-symbols-rounded">contact_support</span>
+                      <p class="card_title">FAQ</p>
+                      <p>자주 묻는 질문.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- 푸터 영역 -->
+      <? include "./common/main_footer.html" ?>
+
+
+    </div>
+
+    <!-- 메인 공지 팝업 -->
+    <script src="./main_js/mainpopup.js"></script>
+
+    <div id="showimage" style="z-index:80; position:absolute; width:322px; right:200px; top:300px;">
+      <script>
+        function closeWin(){
+        var chk = document.getElementById('Notice')
+        if ( chk.checked ) {
+          setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+        }
+        }
+        if ( getCookie( "Notice" ) == "done" ) {hidebox();}
+      </script>
+      <div>
+        <img src="./main_images/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+      </div>
+      <div style="font-size:12px;text-align:center;color:#fff;">
+        <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+      <a href="#"  onclick="closeWin();hidebox();return false;" style="color: #fff;"> [close] </a>
+      </div>
+    </div>
+
+    <script src="./common/js/jquery-1.12.4.min.js"></script>
+    <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./common/js/fullnav.js"></script>
+    <script src="./main_js/move.js"></script>
+   <script src="./common/js/main_search.js"></script>
+   <script src="./common/js/aos.js"></script>
+   <script src="./common/js/aos_init.js"></script>
+    
+  </body>
+</html>

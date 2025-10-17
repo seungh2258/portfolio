@@ -1,0 +1,50 @@
+/* 그룹개요 내용 콘텐츠 */
+#content .content_area{width: 1400px; margin: 0 auto; padding-bottom: 50px;}
+
+#content .content_area .text_top{display: block; font-size: 2rem; text-align: center; font-weight: 600;
+line-height: 3.5rem; margin: 100px 0 200px; position: relative; letter-spacing: -1px; line-height: 3.5rem;}
+#content .content_area .text_top span{color: var(--font-color-main);}
+#content .content_area .text_top::before,
+#content .content_area .text_top::after{content: ""; display: block; width: 50px; height: 50px;
+position: absolute;}
+#content .content_area .text_top::before{background: url(../images/content1/quotes_top.svg) no-repeat;
+    top: -85px; left: 50%; transform: translate(-50%, -50%);}
+#content .content_area .text_top::after{background: url(../images/content1/quotes_bottom.svg) no-repeat;
+    bottom: -150px; left: 50%; transform: translate(-50%, -50%);}
+
+#content .content_area hr{height: 1px; background: #ccc; border: 0;}
+
+#content .content_area h3{text-align: center; margin: 100px 0 50px; font-size: 2.5rem;}
+#content .content_area p:nth-of-type(2){text-align: center; color: var(--font-color-main); font-size: 2rem; font-weight: 500;}
+#content .content_area p:nth-of-type(3){text-align: center; color: var(--font-color2); font-size: 1.2rem; font-weight: 500;}
+
+#content .content_area ul{display: flex; justify-content: center; gap: 30px; margin-top: 120px;}
+#content .content_area ul li{background: rgb(92, 92, 92); width: 350px; height: 400px; border-radius: 20px;
+    display: block; text-align: center; color: #fff; box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2); overflow: hidden;}
+
+#content .content_area ul li:nth-of-type(1){background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/content1/planet_bg.png);}
+#content .content_area ul li:nth-of-type(2){background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/content1/foodcare_bg.png);}
+#content .content_area ul li:nth-of-type(3){background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/content1/people&community_bg.png);}
+
+#content .content_area ul li strong{display: block; font-size: 1.3rem; width: 350px; height: 60px;
+    background: rgba(66, 66, 66, .5); border-radius: 20px 20px 0 0; text-align: center; line-height: 60px;}
+#content .content_area ul li dl dt .material-symbols-rounded{display: block; font-size: 100px; margin: 50px 0 30px; transition: all .5s ease-out;}
+#content .content_area ul li dl dt .highlight_title{display: block; font-size: 1.5rem; margin-bottom: 20px; font-weight: 500;}
+#content .content_area ul li dl dd{line-height: 5rem; transform: translateY(70px); transition: all .2s ease-out;}
+#content .content_area ul li:hover dl dt .material-symbols-rounded{display: block; font-size: 70px; margin: 10px 0 20px; color: #fff;}
+#content .content_area ul li:hover dl dd{line-height: 2.5rem; transform: translateY(0);}
+
+#content .content_area .arrow_down{display: block; font-size: 130px; text-align: center; margin: 50px 0 0 0;
+color: var(--font-color2); text-shadow: 2px 2px 5px rgba(0, 0, 0, .2);}
+
+#content .content_area .governance{margin: 50px auto; background: var(--font-color-main); width: 1050px; height: 100px;
+border-radius: 50px; color: #fff; font-size: 2rem; display: flex; justify-content: center; align-items: center;
+box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2); transition: all .5s ease-out;}
+#content .content_area .governance:hover{transform: scale(1.04);}
+
+#content .content_area .governance_bottom{display: flex; justify-content: center; gap: 50px; margin-bottom: 100px;}
+#content .content_area .governance_bottom_box{width: 500px; height: 200px; display: flex; justify-content: center;
+align-items: center; flex-direction: column; gap: 20px; border-radius: 40px; border: 2px solid #ccc;
+box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, .1); font-size: 1.3rem; font-weight: 500; color: var(--font-color2); transition: all .5s ease-out;}
+#content .content_area .governance_bottom_box span{color: var(--font-color-main); font-size: 70px;}
+#content .content_area .governance_bottom_box:hover{transform: scale(1.04);}

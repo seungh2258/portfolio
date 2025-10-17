@@ -1,0 +1,28 @@
+/* 기념이념 내용 콘텐츠 */
+#content .content_area{width: 1400px; margin: 20px auto 50px; padding-bottom: 150px;}
+
+#content .content_area .tab_menu{margin: 0 auto; display: flex; justify-content: center; align-items: center; gap: 30px;}
+#content .content_area .tab_menu .tab{background: var(--font-color-main);
+display: flex; justify-content: center; align-items: center; color: #fff; font-size: 1.3rem;
+border-radius: 15px; border: 2px solid var(--font-color-main); padding: 13px 30px; box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+transition: all .3s ease-out;}
+#content .content_area .tab_menu .tab:hover{background: #fff; color: var(--font-color-main);}
+#content .content_area .tab_menu .tab.current{background: #fff; color: var(--font-color-main);}
+
+#content .content_area h3{display: block; font-size: 2rem; font-weight: 600; text-align: center;}
+#content .content_area .contlist_box li{margin: 160px 0;}
+#content .content_area .contlist_box li h3 span{color: var(--font-color-main);}
+#content .content_area .contlist_box li .maps{width: 1000px; margin: 30px auto; height: 500px; border: 2px solid var(--font-color-main);
+        border-radius: 20px; box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);}
+
+#content .content_area .contlist_box li .map_bottom{width: 1000px; margin: 0 auto; display: flex; justify-content: space-between;}
+#content .content_area .contlist_box li .map_bottom .info{font-size: 1.1rem; line-height: 2rem; color: var(--font-color2);}
+#content .content_area .contlist_box li .map_bottom .info span{transform: translateY(5px);}
+#content .content_area .contlist_box li .map_bottom .info .map_btn{display: flex; gap: 15px; margin-top: 10px;}
+#content .content_area .contlist_box li .map_bottom .info .map_btn .naver_map_btn,
+#content .content_area .contlist_box li .map_bottom .info .map_btn .kakao_map_btn{width: 50px; height: 50px; box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .2); border-radius: 10px;}
+#content .content_area .contlist_box li .map_bottom .info .map_btn .naver_map_btn{background: url(../images/content4/naver_map.png);}
+#content .content_area .contlist_box li .map_bottom .info .map_btn .kakao_map_btn{background: url(../images/content4/kakao_map.png);}
+
+#content .content_area .contlist_box li .map_bottom .transportation{text-align: right; color: var(--font-color2);}
+#content .content_area .contlist_box li .map_bottom .transportation p:nth-of-type(1){font-size: 1.4rem; font-weight: 500; margin-bottom: 20px;}

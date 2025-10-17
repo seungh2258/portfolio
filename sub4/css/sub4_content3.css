@@ -1,0 +1,65 @@
+/* 기념이념 내용 콘텐츠 */
+#content .content_area{margin: 0 auto;}
+
+#content .content_area h3{font-size: 2rem; font-weight: 600; color: var(--font-color-main); text-align: center;
+margin: 100px 0 35px;}
+#content .content_area strong{display: block; font-weight: 600; font-size: 2.5rem; text-align: center;
+margin-bottom: 20px;}
+#content .content_area p{font-size: 1.3rem; display: block; width: 1400px; margin: 0 auto; text-align: center; line-height: 2.4rem;}
+#content .content_area .brand_logo{display: block; margin: 0 auto 60px;}
+#content .content_area .brand_paragraph{font-size: 1.5rem;}
+#content .content_area hr{height: 1px; background: #ccc; border: 0; margin: 100px auto 0; width: 1400px;}
+
+#content .content_area>p:nth-of-type(2){margin-bottom: 100px;}
+
+#content .content_area .brand_image{width: 100%; height: 600px; background: url(../images/content3/brand_img_1.jpg);}
+
+
+
+#content .content_area .brand_story_box_1{margin: 0 auto; background: #000; padding: 100px 0 180px;}
+#content .content_area .brand_story_box_1 strong,
+#content .content_area .brand_story_box_1 p{color: #fff; display: block;}
+#content .content_area .brand_story_box_1 ul{display: flex; justify-content: center; align-items: center; gap: 70px; margin-top: 70px;}
+#content .content_area .brand_story_box_1 ul li{width: 200px; height: 200px; perspective: 1000px;}
+
+#content .content_area .brand_story_box_1 ul li .card {width: 100%; height: 100%; position: relative; transition: transform 0.8s; transform-style: preserve-3d;
+  border-radius: 50%; transform-origin: center center;}
+#content .content_area .brand_story_box_1 ul li:hover .card{transform: rotateY(180deg);}
+#content .content_area .brand_story_box_1 .card .front,
+#content .content_area .brand_story_box_1 .card .back{position: absolute; width: 100%; height: 100%; border-radius: 50%; backface-visibility: hidden; display: flex;
+  flex-direction: column; justify-content: center; align-items: center; text-align: center; transition: all 0.3s; box-sizing: border-box;}
+#content .content_area .brand_story_box_1 .card .front{background: rgb(115, 0, 0); color: white;}
+#content .content_area .brand_story_box_1 .card .front img{width: 90%;}
+
+#content .content_area .brand_story_box_1 .card .back{background: rgb(115, 0, 0); color: var(--font-color-main); transform: rotateY(180deg);}
+#content .content_area .brand_story_box_1 .card .back p {font-size: 1.2rem; line-height: 1.9rem; width: 100%; text-align: center;}
+
+#content .content_area .brand_story_box_1 ul li strong{font-size: 2rem; margin-top: 20px;}
+
+#content .content_area .brand_story_box_2 ul li{width: 100%; height: 800px; display: flex; justify-content: center; align-items: center; gap: 100px;}
+#content .content_area .brand_story_box_2 ul li div:nth-of-type(1){width: 400px; height: 700px; display: flex; flex-direction: column;}
+#content .content_area .brand_story_box_2 ul li div:nth-of-type(1) strong{font-weight: 800;}
+#content .content_area .brand_story_box_2 ul li div:nth-of-type(2){width: 600px; height: 600px; position: relative;}
+
+#content .content_area .brand_story_box_2 ul li img,
+#content .content_area .brand_story_box_2 ul li p{display: block; text-align: center; width: auto;}
+#content .content_area .brand_story_box_2 ul li img{transform: scale(.8);}
+
+#content .content_area .brand_story_box_2 ul li strong,
+#content .content_area .brand_story_box_2 ul li p{text-shadow: 3px 3px 10px rgba(0, 0, 0, .2);}
+
+#content .content_area .brand_story_box_2 ul li:nth-of-type(1){background: linear-gradient(143deg,rgba(252, 87, 68, 1) 0%, rgba(210, 51, 34, 1) 100%);}
+#content .content_area .brand_story_box_2 ul li:nth-of-type(1) strong,
+#content .content_area .brand_story_box_2 ul li:nth-of-type(1) p{color: #fff;}
+#content .content_area .brand_story_box_2 ul li:nth-of-type(2){background: linear-gradient(143deg,rgba(255, 179, 107, 1) 0%, rgba(229, 138, 53, 1) 100%);}
+#content .content_area .brand_story_box_2 ul li:nth-of-type(3){background: linear-gradient(143deg,rgba(255, 238, 219, 1) 0%, rgba(250, 225, 193, 1) 100%);}
+#content .content_area .brand_story_box_2 ul li:nth-of-type(4){background: linear-gradient(143deg,rgba(179, 238, 245, 1) 0%, rgba(90, 180, 184, 1) 100%);}
+#content .content_area .brand_story_box_2 ul li:nth-of-type(4) strong,
+#content .content_area .brand_story_box_2 ul li:nth-of-type(4) p{color: #fff;}
+
+#content .content_area .brand_story_box_2 ul li div:nth-of-type(2) p{position: absolute; font-size: 1.6rem; font-weight: 500;}
+#content .content_area .brand_story_box_2 ul li div:nth-of-type(2) p:nth-of-type(1){top: 30px; left: 265px;}
+#content .content_area .brand_story_box_2 ul li div:nth-of-type(2) p:nth-of-type(2){top: 210px; right: 7px;}
+#content .content_area .brand_story_box_2 ul li div:nth-of-type(2) p:nth-of-type(3){bottom: 70px; right: 120px;}
+#content .content_area .brand_story_box_2 ul li div:nth-of-type(2) p:nth-of-type(4){bottom: 70px; left: 130px;}
+#content .content_area .brand_story_box_2 ul li div:nth-of-type(2) p:nth-of-type(5){top: 210px; left: 8px;}

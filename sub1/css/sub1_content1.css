@@ -1,0 +1,61 @@
+/* 그룹개요 내용 콘텐츠 */
+#content .content_area{ margin: 0 auto; padding-bottom: 50px;}
+
+
+#content .content_area .ceo{width: 1400px; display: flex; margin: 0 auto; justify-content: center;}
+
+#content .content_area .ceo_text{width: 700px; padding: 50px 100px 0 100px;}
+#content .content_area .ceo_text h3{font-size: var(--font-size-h3); text-align: center;
+                                    margin-bottom: 30px; font-weight: 500;}
+#content .content_area .ceo_text h4 span{color: var(--font-color-main);}
+#content .content_area .ceo_text p:nth-of-type(1){font-size: 1.7rem; font-weight: 400; text-align: center;
+                                    margin-bottom: 30px;}
+#content .content_area .ceo_text p:nth-of-type(1) span{font-size: 1.7rem; font-weight: 500; text-align: center;
+                                    margin-bottom: 30px; color: var(--font-color-main);}
+#content .content_area .ceo_text p:nth-of-type(2){font-size: 1rem; font-weight: 400; text-align: justify;}
+#content .content_area .ceo_text p span{font-size: 1.2rem; font-weight: 600;}
+
+#content .content_area .sub1_introduction_title{font-size: 2.25rem; font-weight: 600; text-align: center;}
+#content .content_area .sub1_introduction_title span{color: var(--font-color-main);}
+
+#content .content_area .ceo_img{width: 700px; position: relative;}
+#content .content_area .ceo_img img{width: 350px; position: relative; top: 150px; left: 100px;}
+#content .content_area .ceo_img .ceo_bg_bottom{ width: 650px; height: 150px; background: var(--font-color-main);
+                                                border-radius: 999px 0 0 999px; margin-left: auto;}
+
+
+#content .content_area .sub1_introduction_1{margin: 250px auto 0; background: #fff5e7; padding: 100px 0;}
+#content .content_area .sub1_introduction_1 p:nth-of-type(2){font-size: 20px; font-weight: 400;}
+#content .content_area .sub1_introduction_image_1{position: relative;}
+#content .content_area .sub1_introduction_image_1 img:nth-of-type(1){display: block; width: 400px; margin: 0 auto 120px; transform: translateX(-40%);}
+#content .content_area .sub1_introduction_image_1 img:nth-of-type(2){display: block; width: 500px; position: absolute; top: 90px; left: 800px;}
+#content .content_area .sub1_introduction_1 p{text-align: center; margin-top: 50px; display: block;}
+
+#content .content_area .sub1_introduction_2{margin: 100px 0 200px;}
+#content .content_area .sub1_introduction_2 p{display: block;}
+#content .content_area .sub1_introduction_2_1,
+#content .content_area .sub1_introduction_2_2{display: flex; justify-content: center; align-items: center; gap: 70px; margin-top: 70px;}
+#content .content_area .sub1_introduction_2_1 p,
+#content .content_area .sub1_introduction_2_2 p{width: 500px; font-size: 20px; font-weight: 400; text-align: justify; line-height: 2.1rem;}
+#content .content_area .sub1_introduction_2_1 p span{font-size: 25px; text-align: center;}
+
+#content .content_area .sub1_introduction_2_1 img,
+#content .content_area .sub1_introduction_2_2 img{ width: 500px; display: block; border-radius: 20px;
+                                                    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);}
+
+#content .content_area .sub1_introduction_2_3{margin: 100px 0 100px; padding: 100px 0; background: #fff5e7;}
+#content .content_area .sub1_introduction_2_3 img{display: block; margin: 0 auto;}
+#content .content_area .sub1_introduction_2_3 p:nth-of-type(1){margin: 20px 0 50px;}
+#content .content_area .sub1_introduction_2_3 p:nth-of-type(2){text-align: center; font-size: 20px; font-weight: 400;}
+
+#content .content_area .sub1_introduction_2_4,
+#content .content_area .sub1_introduction_2_5{margin-top: 70px; display: flex; justify-content: center; align-items: center; gap: 70px;}
+#content .content_area .sub1_introduction_2_4 img,
+#content .content_area .sub1_introduction_2_5 img{ width: 500px; display: block; border-radius: 20px;
+                                                    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);}
+#content .content_area .sub1_introduction_2_4 p,
+#content .content_area .sub1_introduction_2_5 p{width: 500px; font-size: 20px; font-weight: 400; line-height: 2.1rem;}
+#content .content_area .sub1_introduction_2_4 p{text-align: right;}
+#content .content_area .sub1_introduction_2_5 p{text-align: left;}
+#content .content_area .sub1_introduction_2_4 p span,
+#content .content_area .sub1_introduction_2_5 p span{font-size: 25px; text-align: center;}

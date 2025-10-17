@@ -1,0 +1,191 @@
+/* Reset CSS  */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/* font-family: 'Orbitron' */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: 'Noto Sans' */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/* font-family: 'Caveat' */
+
+
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none; box-sizing: border-box;}
+html{font-size: 18px;}
+body {font-family:'Roboto', sans-serif; color:#333;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+ul, ol, dl {list-style:none;}
+img, video {border:0; vertical-align:top;}
+a, a:link {color:#333;text-decoration:none; display: block;}
+a:visited {color:#333;}
+a:hover, a:active {color:#333;text-decoration:none;}
+table {border-collapse:collapse; border-spacing:0;}
+input, select {vertical-align:middle;}
+label {cursor:pointer;}
+.blind,legend,hr,caption {display:block; overflow:hidden; position:absolute; top:0; left:-1000em;}
+i,em,address {font-style:normal; font-weight:normal;}
+p,li,dd{line-height:1.5em}
+.hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+    overflow: hidden; color: #fff;}
+
+
+
+    
+
+/* @@@@@ 와이드 PC @@@@@ */
+
+/* 헤더 공통 영역 */
+#wrap{width:100%; overflow: hidden;}
+#headerArea{position:fixed; z-index: 100; height: 80px; left:0; top: 0; width: 100%;}	
+#headerArea	.headerInner{width: 90%; margin: 0 5%; overflow: visible;}
+#headerArea h1{float: left; margin-top: 18px; width: 93px;}
+#headerArea h1 a{color: #fff; text-decoration: none; background: url(../images/logo.png) no-repeat;
+overflow: hidden; width: 93px; height: 39px; text-indent: -999px;}
+#headerArea #gnb{float: right; padding-top: 25px;}
+#headerArea #gnb ul{}
+#headerArea #gnb ul li{float: left; margin-right: 30px;}
+#headerArea #gnb ul li a{color: #fff; text-decoration: none; font-size: 1rem; font-weight: 600; font-family: 'Orbitron', sans-serif; transition: all .3s ease-out;}
+
+#headerArea #gnb ul li a:hover{text-shadow: 0 0 5px #AACAE6, 0 0 15px #AACAE6, 0 0 20px #AACAE6, 0 0 40px #AACAE6, 0 0 60px #00AAD2, 0 0 10px #00AAD2, 0 0 98px #00AAD2;}
+
+
+/* 햄버거메뉴 */
+#headerArea .menu_ham {
+   position: absolute; right: 10px;top: 12px;
+   height: 50px;
+   border-radius: 5px;
+   z-index:50 ; display: none;
+}
+#headerArea .menu_ham span {
+   width: 30px;
+   height: 2px;
+   background: #fff;
+   position: relative;
+   text-indent: -9999px;
+   display: block;
+   margin: 26px 15px;
+   transition: all .3s;
+}
+#headerArea .menu_ham span::before {
+   content: '';
+   display: block;
+   width: 30px;
+   height: 2px;
+   background: #fff;
+   position: absolute;
+   top: -7px;
+   left: 0;
+   transition: all .3s;
+}
+#headerArea .menu_ham span::after {
+   content: '';
+   display: block;
+   width: 30px;
+   height: 2px;
+   background: #fff;
+   position: absolute;
+   top: 7px;
+   left: 0;
+   transition: all .3s;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.mn_open .menu_ham span, #headerArea.mn_open .menu_ham span::before, #headerArea.mn_open .menu_ham span::after {
+   background: #fff;
+}
+/* #headerArea.down .menu_ham span, #headerArea.down .menu_ham span::before, #headerArea.down .menu_ham span::after {
+   background: #333;
+} */
+
+#headerArea.mn_open .menu_ham span {
+   background: rgba(0,0,0,0);
+}
+#headerArea.mn_open .menu_ham span::before {
+   transform: rotate(45deg);
+   top: 0;
+}
+#headerArea.mn_open .menu_ham span::after {
+   transform: rotate(-45deg);
+   top: 0;
+}
+
+
+/* SCROLL DOWN */
+.down{display: block; position: absolute; 
+	 left:50%; margin-left: -50px; bottom: 10%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% {transform: translateY(10px); opacity:1;}
+	100% {transform: translateY(-10px); opacity:0.8;}
+}
+.down img{margin: 0 auto; display: block; width: 60px; height: auto;}
+.down p{color: #fff; text-align: center; margin-top: 10px; font-family: 'Orbitron', sans-serif;}
+
+
+
+/* 푸터 공통 영역 */
+#footerArea{text-align: center; font-size: 2em;
+padding: 30px 0; background: black; color: #fff;}
+#footerArea img{margin: 20px 0;}
+#footerArea p{font-size: 1rem; margin-bottom: 30px;}
+#footerArea .sns_box{display: flex; justify-content: center; align-items: center; gap: 15px;}
+#footerArea .sns_box a{color: #fff;}
+
+
+#footerArea .top_move{width: 80px; height: 80px; color: #fff; font-size: 1.3rem; border-radius: 50%;
+                      box-shadow: 0 0 15px 1px rgba(0, 0, 0, .3); position: fixed; right: 40px; bottom: 150px; z-index: 90;
+                       display: none; transition: color, background .5s ease-out;}
+#footerArea .top_move>span{display: block; text-align: center; margin-top: 25px; position: absolute; top: 65px; left: 50%; transform: translateX(-50%);
+    font-family: 'Orbitron', sans-serif;}
+#footerArea .top_move>img{position: absolute; top: -20px; left: 0;}
+
+#footerArea .top_move > img {
+  animation: none; /* 기본 상태에서는 회전 없음 */
+}
+
+#footerArea .top_move:hover > img {
+  animation: spin .5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	#headerArea .menuOpen{ display:block; }
+   #headerArea #gnb{
+      float:none;
+      width:100%;
+      background: rgba(0, 0, 0, .9);
+      display:none;
+      position:absolute;
+      top:0; left:0;
+      padding-top: 80px;
+      box-sizing: border-box;}
+   #headerArea #gnb ul{display: flex; flex-direction: column;}
+   #headerArea #gnb ul li{float:none; margin:0; text-align:center; margin-right: 0;}
+   #headerArea #gnb li a{display: block; padding: 20px 0;font-size: 2em;}
+   #headerArea #gnb ul li a{font-size: 1.3rem; font-weight: 600; font-family: 'Orbitron', sans-serif;}
+   /* #headerArea #gnb ul li a:hover{background:#AACAE6 ; color: #000;} */
+   
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+   #headerArea h1 a{transform: scale(.75);}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}

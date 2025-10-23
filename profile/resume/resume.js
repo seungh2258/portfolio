@@ -5,8 +5,8 @@ for(i = 0; i < linkToggle.length; i++){
     
         event.preventDefault();
         // dataset? 사용자가 해당 요소에 커스텀 속성을 추가한 객체이다.
-        console.log(this) // <a class-"toggle-btn" data-containger="toggle-1" href="#">
-        // this.dataset.containger -> a 태그 안에 있는 data-containger="toggle-n" 을 가져온다.
+        console.log(this) // <a class-"toggle-btn" data-container="toggle-1" href="#">
+        // this.dataset.container -> a 태그 안에 있는 data-container="toggle-n" 을 가져온다.
         var container = document.getElementById(this.dataset.container); // id 는 해당 toggle container(토글박스) 의 id 로 지정해주었으므로 해당 container 의 id 가 들어감
 
         if (!container.classList.contains('active')) { // active 가 없으면

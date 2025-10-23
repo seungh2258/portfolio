@@ -129,6 +129,18 @@
   }, 4000);
 })();
 
+/* ---- Home Alert 등장 효과 ---- */
+(function(){
+  const alerts = document.querySelectorAll('#section_wrap section:nth-of-type(1) .home_alert');
+  if (!alerts.length) return;
+
+  // 5초 뒤부터 순차적으로 등장
+  alerts.forEach((alert, index) => {
+    setTimeout(() => {
+      alert.classList.add('is-visible');
+    }, 7500 + index * 400); // 각 alert 간 약간의 간격
+  });
+})();
 
 
 });

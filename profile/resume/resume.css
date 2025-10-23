@@ -1,6 +1,6 @@
 @charset "utf-8"; 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 /* font-family: 'Noto Sans KR', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
 
@@ -20,7 +20,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; } 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section { display: block; } 
-body { font-family:'Noto Sans KR', sans-serif; font-size: 16px; color: #333; } 
+body { font-family:'Noto Sans KR', sans-serif; font-size: 16px; color: #333; background: url(./bg.jpg) no-repeat;
+    background-position: center; background-size: cover;}
 ol, ul { list-style: none; } 
 table { border-collapse: collapse; border-spacing: 0; } 
 address { font-style: normal } 
@@ -31,35 +32,87 @@ img { border: 0; vertical-align: top; width: 100%;}
 .wrap { overflow: hidden;}
 
 /* header */
-header { border-bottom: 1px solid #000; }
-header .image { border-radius: 50%; overflow: hidden; width: 30%;}
-header .head_main { display: flex; padding: 5% 10%; column-gap: 10%; align-items: center;}
-header .head_ttl {}
-header .head_ttl h2 { font-size: 8vw;}
-header .head_ttl span { display: block; font-size: 1.25em; font-weight: 100;}
-header .head_ttl strong { font-weight: 400;}
+header h1{position: absolute; top: 16px; font-weight: 500; color: #555;}
+header .image {border-radius: 29px; overflow: hidden; width: 280px; box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .3);}
+header .head_main {display: flex; justify-content: space-evenly; align-items: center;
+    margin: 100px auto 0;
+    width: 1000px;
+    height: 500px;
+    padding: 80px 0;
+    border-radius: 29px;
+    /* 글래스 효과 */
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(40px);
+     -webkit-backdrop-filter: blur(40px);
+     box-shadow: 
+          0 8px 32px rgba(0, 0, 0, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.5),
+          inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+          inset 0 0 0px 0px rgba(255, 255, 255, 0);
+     border: 1px solid rgba( 255, 255, 255, 0.18 );    
+}
+
+/* 삼색 버튼 */
+.top_btn{display: flex; justify-content: left; align-items: center; gap: 9px; margin-bottom: 30px;
+    position: absolute; top: 20px; left: 20px;}
+.top_btn div{width: 15px; height: 15px; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
+
+.top_btn div:nth-of-type(1){background: #ec6765;}
+.top_btn div:nth-of-type(2){background: #f2ca44;}
+.top_btn div:nth-of-type(3){background: #65c466;}
+
+.top_btn div span{font-size: 15px; font-weight: 600; display: none;}
+.top_btn div:hover span{display: block; cursor: pointer;}
+
+header .head_ttl {display: flex; flex-direction: column; justify-content: center; align-items: left;}
+header .head_ttl h2 {font-size: 3rem; font-weight: 500;}
+header .head_ttl p {display: block; font-size: 1.3rem; font-weight: 300; width: 380px; margin-top: 20px;}
 
 /* contentArea (article) */
 #contentArea { margin: 100px 0; padding: 0 5%; line-height: 1.7em;}
-#contentArea section { margin: 50px 0; position: relative;}
-#contentArea .toggle-btn {position: absolute; top: 10px; right: 10px; font-size: 2em;}
-#contentArea h3 { position: relative; font-size: 1.5em; padding: 20px 0;}
-#contentArea h3::after{ display: block; position: absolute; content: ''; width: 100%; height: 1px; background: #000; bottom: 10px; transition: all .5s;}
-#contentArea .toggle-container { transition: height 0.35s ease-in-out; overflow: hidden;}
+#contentArea section { margin: 50px 0; position: relative; border-radius: 29px;
+    padding: 20px;
+    /* 글래스 효과 */
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(40px);
+     -webkit-backdrop-filter: blur(40px);
+     box-shadow: 
+          0 8px 32px rgba(0, 0, 0, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.5),
+          inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+          inset 0 0 0px 0px rgba(255, 255, 255, 0);
+     border: 1px solid rgba( 255, 255, 255, 0.18 );    
+    }
+#contentArea .toggle-btn {position: absolute; top: 40px; right: 30px; font-size: 2em;}
+#contentArea h3 { position: relative; font-size: 1.5em; padding: 20px 0; margin-left: 20px;}
+#contentArea .toggle-container { transition: height 0.35s ease-in-out; overflow: hidden; padding: 0 30px;}
 #contentArea .toggle-container:not(.active) { display: none; }
-#contentArea .toggle-container dl { display: flex; column-gap: 5%; border-bottom: 1px solid #ddd; padding: 30px 0; }
+#contentArea .toggle-container dl { display: flex; column-gap: 5%; border-bottom: 1px solid #999; padding: 30px 0; }
+#contentArea .toggle-container dl:last-child {border-bottom: none;}
+#contentArea .portfolio .toggle-container dl{border-bottom: 1px solid #999;}
+#contentArea .portfolio .toggle-container li:last-child dl{border-bottom: none;}
 #contentArea .toggle-container dt { width: 30%; font-size: 1.2em; font-weight: 500; }
 #contentArea .toggle-container dd { width: 65%; }
 #contentArea .toggle-container dd a { display: block; word-break:break-all; }
 #contentArea .toggle-container dd span { display: block; }
 
 /* footer */
-footer .footer_inner { background: #000; color: #fff; text-align: center; padding: 20px 0;}
+footer .footer_inner {text-align: center; margin: 0 auto 50px;}
 footer .footer_inner p { font-weight: 100; }
-footer .footer_inner a { display:flex; color: #666;; justify-content: center; margin: 20px 0; padding: 10px; overflow: hidden; transition: all .5s; align-items: center;}
-footer .footer_inner a:hover { color: #fff}
-footer .footer_inner a i { transition: all 1s; font-size: 3em; margin: 0 10px;}
-footer .footer_inner a:hover i { color: #fff; transform: translateX(10px) translateY(-70px);}
+footer .footer_inner a { display:flex; color: #fff; justify-content: center; overflow: hidden; transition: all .5s; align-items: center;
+    width: 50%; margin: 0 auto; border-radius: 29px; padding: 25px 0; font-size: 1.5rem;
+    /* 글래스 효과 */
+     background: rgba(0, 0, 255, 0.5);
+     backdrop-filter: blur(40px);
+     -webkit-backdrop-filter: blur(40px);
+     box-shadow: 
+          0 8px 32px rgba(0, 0, 0, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.5),
+          inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+          inset 0 0 0px 0px rgba(255, 255, 255, 0);
+     border: 1px solid rgba( 255, 255, 255, 0.18 );   
+    }
+footer .footer_inner a:hover{background: rgba(0, 0, 255, 0.7);}
 
 @media screen and (max-width:1024px) {
     #contentArea .toggle-container dl { display: block;}

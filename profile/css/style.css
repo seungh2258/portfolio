@@ -473,35 +473,35 @@ section { min-width: 1850px; height:auto; position:relative;
   -webkit-animation: eval 18s ease-in-out infinite both;
   animation:         eval 18s ease-in-out infinite both;
 
-  /* 전체적인 배경을 밝고 따뜻하게 */
-  background-color: #E8E3D8;
+  /* 📌 중심 배경색: 기존보다 살짝 밝은 웜 그레이 */
+  background-color: rgb(170, 165, 158);
 
-  /* 베이지 → 피치 → 브라운 → 크림 계열의 자연스러운 그라데이션 */
+  /* 웜그레이(중간) → 밝은웜그레이 → 실버 → 거의 화이트 */
   background-image:
     radial-gradient(farthest-corner at 0% calc(var(--eval) * 100%),
-      hsla(33deg, 31%, 83%, 1),
-      hsla(33deg, 31%, 83%, 0) 80%),
+      rgba(170, 165, 158, 1),
+      rgba(170, 165, 158, 0) 80%),
 
     radial-gradient(farthest-corner at calc(var(--eval) * 100%) 100%,
-      hsla(24deg, 68%, 82%, 0.95),
-      hsla(24deg, 68%, 82%, 0) 115%),
+      rgba(205, 200, 194, 0.95),
+      rgba(205, 200, 194, 0) 115%),
 
     radial-gradient(farthest-corner at calc(100% - var(--eval) * 100%) 0%,
-      hsla(28deg, 38%, 62%, 0.9),
-      hsla(28deg, 38%, 62%, 0) 110%),
+      rgba(135, 130, 123, 0.9),
+      rgba(135, 130, 123, 0) 110%),
 
     radial-gradient(farthest-corner at 100% calc(100% - var(--eval) * 100%),
-      hsla(35deg, 30%, 95%, 0.85),
-      hsla(35deg, 30%, 95%, 0) 100%);
+      rgba(240, 236, 230, 0.95),
+      rgba(240, 236, 230, 0) 100%);
 }
 
-/* 🌊 부드럽게 움직이게 */
-@keyframes eval{
+/* 🌊 움직임 강조 */
+@keyframes eval {
   0%   { --eval: 0;   }
-  20%  { --eval: 1.2; }
-  40%  { --eval: 0.3; }
-  60%  { --eval: 1.0; }
-  80%  { --eval: 0.5; }
+  20%  { --eval: 1.8; }
+  40%  { --eval: 0.5; }
+  60%  { --eval: 1.4; }
+  80%  { --eval: 0.7; }
   100% { --eval: 0;   }
 }
 
